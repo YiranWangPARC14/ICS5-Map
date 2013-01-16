@@ -174,6 +174,11 @@ var countryEssay = "No essay yet";
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Mexico")
 		}
+		else if (chosen == "df") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Nigeria")
+		}
 		else {
 		//	alert(chosen)
 		}
@@ -231,5 +236,6 @@ markersArray.push(marker);
 
 <script> 
 essays['Norway'] = $.ajax({url: "norway.html", async: false}).responseText;
+essays['Guyana'] = $.ajax({url: "Guyana.html", async: false}).responseText;
 
 </script> 
