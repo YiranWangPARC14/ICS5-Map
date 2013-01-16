@@ -158,21 +158,27 @@ var countryEssay = "No essay yet";
 			}
 		}
 
-		if (chosen == "cc") {
+
+		if (chosen == "ClimateChange") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "United States")
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
-			MarkACountry(geocoder, "Australia")
+		}
+		else if (chosen == "SeaLevelRise") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Maldives")
 			MarkACountry(geocoder, "Japan")
 			MarkACountry(geocoder, "Taiwan")
 		}
-		else if (chosen == "slr") {
+		else if (chosen == "Deforestation") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Mexico")
+			MarkACountry(geocoder, "Australia")
 		}
 		else if (chosen == "df") {
 			clearOverlays();
@@ -224,9 +230,9 @@ markersArray.push(marker);
 		This map is a class project by the "ICS 5: Environmental Issues in Information Technology" undergraduate course at <a href = "http://www.uci.edu">UCI</a>.  </p> 
 	 <FORM NAME = f1>
 		<center>
-	<Input type = radio Name = r1 Value = "cc" onClick =GetSelectedItem()>Climate Change<BR>
-	<Input type = radio Name = r1 Value = "slr" onClick =GetSelectedItem()>Sea Level Rise<BR>
-	<Input type = radio Name = r1 Value = "df" onClick =GetSelectedItem()>Deforestation<BR>
+	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change<BR>
+	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise<BR>
+	<Input type = radio Name = r1 Value = "Deforestation" onClick =GetSelectedItem()>Deforestation<BR>
 	Other environmental issues will go here.
 	</center>
 	</form>
