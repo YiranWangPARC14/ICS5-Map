@@ -3,7 +3,7 @@
   <head> 
     <meta charset="utf-8"> 
     <title> 
-    Google Maps V3 API Sample #2:  Clik to find out  what country you are in
+    ICS 5 Class project
     </title> 
     <link
     href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css"
@@ -169,6 +169,9 @@ var countryEssay = "No essay yet";
 		else if (chosen == "SeaLevelRise") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "United States")
+			MarkACountry(geocoder, "Canada")
+			MarkACountry(geocoder, "Spain")
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Maldives")
 			MarkACountry(geocoder, "Japan")
@@ -218,7 +221,7 @@ markersArray.push(marker);
 	
      
     <p align="center" id="country"> 
-	<B>ENVIRONMENTAL ISSUES MAP</B><BR>
+	<B>ENVIRONMENTAL ISSUES MAP BY ICS 5</B><BR>
 		This map shows the top environmental issues around the world.<BR>
 	Click on a country to see a description of the top issues in that country. <br>
 	You can also click on one of the environmental issues below to see the countries where that issue is in the top three.<BR>
