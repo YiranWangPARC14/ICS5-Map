@@ -183,6 +183,11 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Australia")
 		}
+		else if (chosen == "df") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Nigeria")
+		}
 		else {
 		//	alert(chosen)
 		}
@@ -239,7 +244,7 @@ markersArray.push(marker);
 </html> 
 
 <script> 
-essays['Norway'] = $.ajax({url: "norway.html", async: false}).responseText;
-essays['Maldives'] = $.ajax({url: "Maldives.html", async: false}).responseText;
+essays['Guyana'] = $.ajax({url: "Guyana.html", async: false}).responseText;
+
 
 </script> 
