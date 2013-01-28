@@ -200,7 +200,9 @@ var countryEssay = "No essay yet";
 	  }
 	}
 	function MarkACountry(geocoder, country)
-    geocoder.geocode( { 'address': country}, function(results, status) {
+	{
+	
+	geocoder.geocode({ 'address': country},function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         //globalMap.setCenter(results[0].geometry.location);
         var marker = new google.maps.Marker({
@@ -212,7 +214,7 @@ markersArray.push(marker);
         alert("Geocode was not successful for the following reason: " + status);
       }
     });
-
+	}
  
     google.maps.event.addDomListener(window, 'load', initialize);
 
