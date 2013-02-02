@@ -179,6 +179,12 @@ var countryEssay = "No essay yet";
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Australia")
+			MarkACountry(geocoder, "Taiwan")
+		}
+		else if (chosen == "Pollution") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Taiwan")
 		}
 		else if (chosen == "df") {
 			clearOverlays();
