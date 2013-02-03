@@ -188,7 +188,23 @@ var countryEssay = "No essay yet";
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Nigeria")
 		}
-		else {
+		else if (chosen == "Water Pollution") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Afghanistan")
+		
+		}
+		else if (chosen == "Air Pollution") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkAcountry(geocoder, "Afghanistan")
+		}
+		else if (chosen == "War And Crime") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Afghanistan")
+			
+		}
 		//	alert(chosen)
 		}
 
@@ -240,13 +256,17 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "Deforestation" onClick =GetSelectedItem()>Deforestation<BR>
 	Other environmental issues will go here.
 	</center>
-	</form>
+	<Input type = radio Name = r1 Value = "Water Pollution" onClick =GetSelectedItem()>Water Pollution<BR>
+	<Input type = radio Name = r1 Value = "Air Pollution" onClick =GetSelectedItem()>Air Pollution<BR>
+	<Input type = radio Name = r1 Value = "War And Crime" onClick =GetSelectedItem()>War And Crime<BR>
+	 </form>
+	 
     <div id="map_canvas"></div> 
   </body> 
 </html> 
 
 <script> 
 essays['Guyana'] = $.ajax({url: "Guyana.html", async: false}).responseText;
-
+essays['Afghanistan'] = $ajax({url: "Afghanistan.html", async: false}).responseText;
 
 </script> 
