@@ -165,7 +165,9 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "United States")
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
+			
 			MarkACountry(geocoder, "Haiti")
+			
 			MarkACountry(geocoder, "New Zealand")
 		}
 		else if (chosen == "SeaLevelRise") {
@@ -183,7 +185,6 @@ var countryEssay = "No essay yet";
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Mexico")
-<<<<<<< HEAD
 			MarkACountry(geocoder, "Australia")
 			MarkACountry(geocoder, "Taiwan")
 		}
@@ -191,38 +192,58 @@ var countryEssay = "No essay yet";
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Taiwan")
-=======
 			MarkACountry(geocoder, "Australia")
+			
 			MarkACountry(geocoder, "Haiti")
+			
 			MarkACountry(geocoder, "New Zealand")
->>>>>>> 5363cd4c15f87e7747b227b1084f4e0dd64dc2af
 		}
 		else if (chosen == "NewEnvironmentalIssue") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "country name")
 		}
-		else if(chosen == "WaterPollution"){
-		  clearOverlays();
-		  var geocoder = new google.maps.Geocoder();
-		  MarkACountry(geocoder, "New Zealand")
-		  MarkACountry(geocoder, "Bulgaria")
-		}
-				else if (chosen == "AirPollution") {
+		
+		else if (chosen == "WaterPollution") {
+		  
 			clearOverlays();
+		  
 			var geocoder = new google.maps.Geocoder();
+		  
+			MarkACountry(geocoder, "New Zealand")
+		  	MarkACountry(geocoder, "Bulgaria")
+		
+		}
+
+		else if (chosen == "AirPollution") {
+			
+			clearOverlays();
+			
+			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Bulgaria")
+		
 		}
+
 		else if (chosen == "Traffic") {
+			
 			clearOverlays();
+			
 			var geocoder = new google.maps.Geocoder();
+			
+			MarkACountry(geocoder, "Macau")
+		
+		}
+
+		else if (chosen == "PublicEducation") {
+			
+			clearOverlays();
+			
+			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "Macau")
 		}
-		else if (chosen == "PublicEducation") {
-			clearOverlays();
-			var geocoder = new google.maps.Geocoder();
-			MarkACountry(geocoder, "Macau")
 		else {
 		//	alert(chosen)
 		}
