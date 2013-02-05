@@ -166,9 +166,10 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
 			
-			MarkACountry(geocoder, "Haiti")
-			
+			MarkACountry(geocoder, "Haiti")		
 			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "New Zealand")                
+			MarkACountry(geocoder, "Monaco")
 		}
 		else if (chosen == "SeaLevelRise") {
 			clearOverlays();
@@ -219,9 +220,10 @@ var countryEssay = "No essay yet";
 			
 			clearOverlays();
 			
-			var geocoder = new google.maps.Geocoder();
-			
+			var geocoder = new google.maps.Geocoder();		
 			MarkACountry(geocoder, "Macau")
+			MarkACountry(geocoder, "Macau")			
+			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Bulgaria")
 		
 		}
@@ -244,6 +246,11 @@ var countryEssay = "No essay yet";
 			
 			MarkACountry(geocoder, "Macau")
 		}
+		else if (chosen == "WasteManagement") {
+			clearOverlays();
+			var geocoder = new google.maps.geocoder();
+			MarkACountry(geocoder, "Monaco")
+		{
 		else {
 		//	alert(chosen)
 		}
@@ -301,6 +308,7 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
 	<Input type = radio Name = r1 Value = "NewEnvironmentalIssue" onClick =GetSelectedItem()>New Environmental Issue<BR>
 	//Other environmental issues will go here.
+	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
 	</center>
 	</form>
     <div id="map_canvas"></div> 
