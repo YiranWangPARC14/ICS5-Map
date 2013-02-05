@@ -196,11 +196,13 @@ var countryEssay = "No essay yet";
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
 		  MarkACountry(geocoder, "New Zealand")
+		  MarkACountry(geocoder, "Bulgaria")
 		}
 				else if (chosen == "AirPollution") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Macau")
+			MarkACountry(geocoder, "Bulgaria")
 		}
 		else if (chosen == "Traffic") {
 			clearOverlays();
@@ -265,6 +267,7 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "AirPollution" onClick =GetSelectedItem()>Air Pollution<BR>
 	<Input type = radio Name = r1 Value = "Traffic" onClick =GetSelectedItem()>Traffic<BR>
 	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
+	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
 	<Input type = radio Name = r1 Value = "NewEnvironmentalIssue" onClick =GetSelectedItem()>New Environmental Issue<BR>
 	//Other environmental issues will go here.
 	</center>
