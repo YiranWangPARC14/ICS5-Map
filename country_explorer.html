@@ -188,6 +188,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Australia")
 			MarkACountry(geocoder, "Taiwan")
+			MarkACountry(geocoder, "Ethiopia")
 		}
 		else if (chosen == "Pollution") {
 			clearOverlays();
@@ -199,10 +200,16 @@ var countryEssay = "No essay yet";
 			
 			MarkACountry(geocoder, "New Zealand")
 		}
-		else if (chosen == "NewEnvironmentalIssue") {
+		else if (chosen == "Desertification") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
-			MarkACountry(geocoder, "country name")
+			MarkACountry(geocoder, "Ethiopia")
+			
+		}
+		else if (chosen == "Soil Degradation") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Ethiopia")
 		}
 		
 		else if (chosen == "WaterPollution") {
@@ -306,7 +313,7 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "Traffic" onClick =GetSelectedItem()>Traffic<BR>
 	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
 	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
-	<Input type = radio Name = r1 Value = "NewEnvironmentalIssue" onClick =GetSelectedItem()>New Environmental Issue<BR>
+	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification<BR>
 	//Other environmental issues will go here.
 	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
 	</center>
