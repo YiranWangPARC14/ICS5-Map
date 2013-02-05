@@ -165,8 +165,11 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "United States")
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
-			MarkACountry(geocoder, "Haiti")
-			MarkACountry(geocoder, "New Zealand")                MarkACountry(geocoder, "Monaco")
+			
+			MarkACountry(geocoder, "Haiti")		
+			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "New Zealand")                
+			MarkACountry(geocoder, "Monaco")
 		}
 		else if (chosen == "SeaLevelRise") {
 			clearOverlays();
@@ -185,13 +188,24 @@ var countryEssay = "No essay yet";
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Australia")
-			MarkACountry(geocoder, "Haiti")
-			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "Taiwan")
+			MarkACountry(geocoder, "Ethiopia")
 		}
-		else if (chosen == "NewEnvironmentalIssue") {
+		else if (chosen == "Pollution") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
-			MarkACountry(geocoder, "country name")
+			MarkACountry(geocoder, "Taiwan")
+			MarkACountry(geocoder, "Australia")
+			
+			MarkACountry(geocoder, "Haiti")
+			
+			MarkACountry(geocoder, "New Zealand")
+		}
+		else if (chosen == "Desertification") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Ethiopia")
+			
 		}
 		else if(chosen == "WaterPollution"){
 		  clearOverlays();
@@ -199,22 +213,54 @@ var countryEssay = "No essay yet";
 		  MarkACountry(geocoder, "New Zealand")
 		  MarkACountry(geocoder, "Bulgaria")
 		  MarkACountry(geocoder, "Italy")
-		}
-				else if (chosen == "AirPollution") {
+		else if (chosen == "Soil Degradation") {
 			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Ethiopia")
+		}
+		
+		else if (chosen == "WaterPollution") {
+		  
+			clearOverlays();
+		  
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Macau")			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Italy")
+		  
+			MarkACountry(geocoder, "New Zealand")
+		  	MarkACountry(geocoder, "Bulgaria")
+		
 		}
-		else if (chosen == "Traffic") {
+
+		else if (chosen == "AirPollution") {
+			
 			clearOverlays();
-			var geocoder = new google.maps.Geocoder();
+			
+			var geocoder = new google.maps.Geocoder();		
 			MarkACountry(geocoder, "Macau")
+			MarkACountry(geocoder, "Macau")			
+			MarkACountry(geocoder, "Monaco")
+			MarkACountry(geocoder, "Bulgaria")
+		
 		}
-		else if (chosen == "PublicEducation") {
+
+		else if (chosen == "Traffic") {
+			
 			clearOverlays();
+			
 			var geocoder = new google.maps.Geocoder();
+			
+			MarkACountry(geocoder, "Macau")
+		
+		}
+
+		else if (chosen == "PublicEducation") {
+			
+			clearOverlays();
+			
+			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "Macau")
 		}
 		else if (chosen == "WasteManagement") {
@@ -277,7 +323,7 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "Traffic" onClick =GetSelectedItem()>Traffic<BR>
 	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
 	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
-	<Input type = radio Name = r1 Value = "NewEnvironmentalIssue" onClick =GetSelectedItem()>New Environmental Issue<BR>
+	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification<BR>
 	//Other environmental issues will go here.
 	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
 	</center>
