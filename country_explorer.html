@@ -166,6 +166,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
 			MarkACountry(geocoder, "Haiti")
+			MarkACountry(geocoder, "New Zealand")
 		}
 		else if (chosen == "SeaLevelRise") {
 			clearOverlays();
@@ -184,12 +185,32 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Australia")
 			MarkACountry(geocoder, "Haiti")
+			MarkACountry(geocoder, "New Zealand")
 		}
 		else if (chosen == "NewEnvironmentalIssue") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "country name")
 		}
+		else if(chosen == "WaterPollution"){
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "New Zealand")
+		}
+				else if (chosen == "AirPollution") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Macau")
+		}
+		else if (chosen == "Traffic") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Macau")
+		}
+		else if (chosen == "PublicEducation") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Macau")
 		else {
 		//	alert(chosen)
 		}
@@ -240,6 +261,10 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change<BR>
 	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise<BR>
 	<Input type = radio Name = r1 Value = "Deforestation" onClick =GetSelectedItem()>Deforestation<BR>
+	<Input type = radio Name = r1 Value = "WaterPollution" onClick = GetSelectedItem()>Water Pollution<BR>
+	<Input type = radio Name = r1 Value = "AirPollution" onClick =GetSelectedItem()>Air Pollution<BR>
+	<Input type = radio Name = r1 Value = "Traffic" onClick =GetSelectedItem()>Traffic<BR>
+	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
 	<Input type = radio Name = r1 Value = "NewEnvironmentalIssue" onClick =GetSelectedItem()>New Environmental Issue<BR>
 	//Other environmental issues will go here.
 	</center>
@@ -250,6 +275,8 @@ markersArray.push(marker);
 
 <script> 
 essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
+essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
+essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
 
 
 </script> 
