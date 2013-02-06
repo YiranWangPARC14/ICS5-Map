@@ -209,6 +209,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Australia")
 			MarkACountry(geocoder, "Haiti")
 			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "India")
 
 		}
 		else if (chosen == "Desertification") {
@@ -273,6 +274,7 @@ var countryEssay = "No essay yet";
 			
 			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Belgium")
+			MarkACountry(geocoder, "India")
 			
 		
 		}
@@ -321,9 +323,12 @@ var countryEssay = "No essay yet";
                   var geocoder = new google.maps/Geocoder();
                   MarkACountry(geocoder, "Norway")
                 }
-		else {
-		//	alert(chosen)
-		}
+		else if (chosen == "Over Population") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "India")
+                
+                }
 
 	}
 	function clearOverlays() {
@@ -385,6 +390,7 @@ markersArray.push(marker);
         <Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>Waste Management<BR>
         <Input type = radio Name = r1 Value = "Resource Exploitation" onClick =GetSelectedItem()>Waste Management<BR>
 	<Input type = radio Name = r1 Value = "Biological Diversity" onClick =GetSelectedItem()>Waste Management<BR>
+        <Input type = radio Name = r1 Value = "Over Population" onClick =GetSelectedItem()>Over Population<BR>
 	</center>
 	</form>
     <div id="map_canvas"></div> 
