@@ -255,13 +255,14 @@ var countryEssay = "No essay yet";
 		else if (chosen == "AirPollution") {
 			
 			clearOverlays();
-			
 			var geocoder = new google.maps.Geocoder();		
 			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Pakistan")			
 			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Bulgaria")
+			MarkACountry(geocoder, "Germany")
+			MarkACountry(geocoder, "Belgium")
 		
 		}
 
@@ -286,7 +287,23 @@ var countryEssay = "No essay yet";
 		else if (chosen == "WasteManagement") {
 			clearOverlays();
 			var geocoder = new google.maps.geocoder();
+<<<<<<< HEAD
 			MarkACountry(geocoder, "Monaco")
+=======
+			MarkACountry(geocoder, "Monaco")
+		}
+		
+		else if (chosen == "Radiation") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Germany")
+		}
+		
+		else if (chosen == "Food Safety") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Germany")
+>>>>>>> ab2cd925d5d741fff0dffba18c78e50446acfb1f
 		}
 		else {
 		//	alert(chosen)
@@ -349,6 +366,11 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
 	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
 	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification<BR>
+<<<<<<< HEAD
+=======
+	<Input type = radio Name = r1 Value = "Radiation" onClick =GetSelectedItem()>Radiation<BR>
+	<Input type = radio Name = r1 Value = "Food Safety" onClick =GetSelectedItem()>Food Safety<BR>
+>>>>>>> ab2cd925d5d741fff0dffba18c78e50446acfb1f
 	//Other environmental issues will go here.
 	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
 	</center>
@@ -363,5 +385,11 @@ essays['South Africa'] = $.ajax({url: "SouthAfrica.html", async: false}).respons
 essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
 essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
 essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
+<<<<<<< HEAD
+=======
+essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
+essays['Honduras'] = $.ajax({url: "Belgium.html",async: false}].responseText;
+
+>>>>>>> ab2cd925d5d741fff0dffba18c78e50446acfb1f
 
 </script> 
