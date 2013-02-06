@@ -195,6 +195,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Taiwan")
 			MarkACountry(geocoder, "Ethiopia")
                         MarkACountry(geocoder, "Congo")
+			MarkACountry(geocoder, "Myanmar")
 
 			MarkACountry(geocoder, "Djibouti")
             MarkACountry(geocoder, "Guadeloupe")
@@ -223,6 +224,7 @@ var countryEssay = "No essay yet";
 		  MarkACountry(geocoder, "New Zealand")
 		  MarkACountry(geocoder, "Bulgaria")
 		  MarkACountry(geocoder, "Italy")
+		  MarkACountry(geocoder, "Myanmar")
           MarkACountry(geocoder, "Guadeloupe")
           MarkACountry(geocoder, "Honduras")
           MarkACountry(geocoder, "Ethiopia")
@@ -313,7 +315,16 @@ var countryEssay = "No essay yet";
                   clearOverlays();
                   var geocoder = new google.maps/Geocoder();
                   MarkACountry(geocoder, "Congo")
-                }
+		  
+		  
+                
+		}
+                else if (chosen == "Threat to biodiversity") {
+                  clearOverlays();
+                  var geocoder = new google.maps/Geocoder();
+                  MarkACountry(geocoder, "Myanmar")
+		
+		}
 		else {
 		//	alert(chosen)
 		}
