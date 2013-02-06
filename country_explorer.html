@@ -194,6 +194,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Sri Lanka")
 			MarkACountry(geocoder, "Taiwan")
 			MarkACountry(geocoder, "Ethiopia")
+                        MarkACountry(geocoder, "Congo")
 
 			MarkACountry(geocoder, "Djibouti")
             MarkACountry(geocoder, "Guadeloupe")
@@ -282,24 +283,37 @@ var countryEssay = "No essay yet";
 			var geocoder = new google.maps.Geocoder();
 			
 			MarkACountry(geocoder, "Macau")
-		}
+		
+                }
 		else if (chosen == "WasteManagement") {
 			clearOverlays();
 			var geocoder = new google.maps.geocoder();
 			MarkACountry(geocoder, "Monaco")
-		}
 		
+                }
 		else if (chosen == "Radiation") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
 		  MarkACountry(geocoder, "Germany")
-		}
 		
+                }
 		else if (chosen == "Food Safety") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
 		  MarkACountry(geocoder, "Germany")
-		}
+                
+                }
+                else if (chosen == "War") {
+                  clearOverlays();
+                  var geocoder = new google.maps/Geocoder();
+                  MarkACountry(geocoder, "Congo")
+                
+                }
+                else if (chosen == "Resource Exploitation") {
+                  clearOverlays();
+                  var geocoder = new google.maps/Geocoder();
+                  MarkACountry(geocoder, "Congo")
+                }
 		else {
 		//	alert(chosen)
 		}
@@ -361,6 +375,8 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "Food Safety" onClick =GetSelectedItem()>Food Safety<BR>
 	//Other environmental issues will go here.
 	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
+        <Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>Waste Management<BR>
+        <Input type = radio Name = r1 Value = "Resource Exploitation" onClick =GetSelectedItem()>Waste Management<BR>
 	</center>
 	</form>
     <div id="map_canvas"></div> 
