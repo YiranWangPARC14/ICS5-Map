@@ -166,7 +166,8 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
 			MarkACountry(geocoder, "Pakistan")
-			MarkACountry(geocoder, "Haiti")		
+			MarkACountry(geocoder, "Haiti")
+			MarkACountry(geocoder, "Norway")
 			MarkACountry(geocoder, "New Zealand")
 			MarkACountry(geocoder, "New Zealand")                
 			MarkACountry(geocoder, "Monaco")
@@ -294,6 +295,7 @@ var countryEssay = "No essay yet";
 		else if (chosen == "Radiation") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Norway")
 		  MarkACountry(geocoder, "Germany")
 		
                 }
@@ -313,6 +315,11 @@ var countryEssay = "No essay yet";
                   clearOverlays();
                   var geocoder = new google.maps/Geocoder();
                   MarkACountry(geocoder, "Congo")
+		 }
+                else if (chosen == "Biological Diversity") {
+                  clearOverlays();
+                  var geocoder = new google.maps/Geocoder();
+                  MarkACountry(geocoder, "Norway")
                 }
 		else {
 		//	alert(chosen)
@@ -377,6 +384,7 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
         <Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>Waste Management<BR>
         <Input type = radio Name = r1 Value = "Resource Exploitation" onClick =GetSelectedItem()>Waste Management<BR>
+	<Input type = radio Name = r1 Value = "Biological Diversity" onClick =GetSelectedItem()>Waste Management<BR>
 	</center>
 	</form>
     <div id="map_canvas"></div> 
@@ -384,7 +392,8 @@ markersArray.push(marker);
 </html> 
 
 
-<script> 
+<script>
+essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
 essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
 essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
 essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
