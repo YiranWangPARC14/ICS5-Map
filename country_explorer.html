@@ -158,6 +158,11 @@ var countryEssay = "No essay yet";
 			}
 		}
 
+		if (chosen == "Population") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Israel")
+		
 
 		if (chosen == "ClimateChange") {
 			clearOverlays();
@@ -222,6 +227,7 @@ var countryEssay = "No essay yet";
 		  MarkACountry(geocoder, "New Zealand")
 		  MarkACountry(geocoder, "Bulgaria")
 		  MarkACountry(geocoder, "Italy")
+		  MarkACountry(geocoder, "Israel")
           MarkACountry(geocoder, "Guadeloupe")
           MarkACountry(geocoder, "Honduras")
           MarkACountry(geocoder, "Ethiopia")
@@ -256,7 +262,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Pakistan")			
 			MarkACountry(geocoder, "Monaco")
-
+		        MarkACountry(geocoder, "Israel")
 			MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Germany")
 			MarkACountry(geocoder, "Belgium")
@@ -354,7 +360,7 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "AirPollution" onClick =GetSelectedItem()>Air Pollution<BR>
 	<Input type = radio Name = r1 Value = "Traffic" onClick =GetSelectedItem()>Traffic<BR>
 	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
-
+	<Input type = radio Name = r1 Value = "Population" onClick =GetSelectedItem()>Population<BR>
 	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
 	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification<BR>
 	<Input type = radio Name = r1 Value = "Radiation" onClick =GetSelectedItem()>Radiation<BR>
