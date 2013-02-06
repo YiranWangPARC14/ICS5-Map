@@ -189,6 +189,7 @@ var countryEssay = "No essay yet";
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Mexico")
+			MarkACountry(geocoder, "Nigeria")
 			MarkACountry(geocoder, "Australia")
 			MarkACountry(geocoder, "Sri Lanka")
 			MarkACountry(geocoder, "Taiwan")
@@ -202,6 +203,7 @@ var countryEssay = "No essay yet";
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Taiwan")
+			MarkACountry(geocoder, "Nigeria")
 			MarkACountry(geocoder, "Australia")
 			MarkACountry(geocoder, "Haiti")
 			MarkACountry(geocoder, "New Zealand")
@@ -210,6 +212,7 @@ var countryEssay = "No essay yet";
 		else if (chosen == "Desertification") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Nigeria")
 			MarkACountry(geocoder, "Ethiopia")
 			
 		}
@@ -370,5 +373,5 @@ essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseTex
 essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
 essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Honduras'] = $.ajax({url: "Belgium.html",async: false}].responseText;
-
+essays['Nigeria'] = $.ajax({url: "Nigeria.html", async: false}).responseText;
 </script> 
