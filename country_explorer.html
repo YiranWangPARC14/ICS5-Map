@@ -173,7 +173,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Spain")
 			MarkACountry(geocoder, "Spain")
 			MarkACountry(geocoder, "Pakistan")
-			MarkACountry(geocoder, "Haiti") HEAD
+			MarkACountry(geocoder, "Haiti")
 			
 			MarkACountry(geocoder, "Finland")		
 			MarkACountry(geocoder, "Norway")
@@ -234,7 +234,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Ethiopia")
                         MarkACountry(geocoder, "Congo")
 			MarkACountry(geocoder, "Finland")
-
+			MarkACountry(geocoder, "South Africa")
 			MarkACountry(geocoder, "Djibouti")
             MarkACountry(geocoder, "Guadeloupe")
             MarkACountry(geocoder, "Honduras")
@@ -246,9 +246,9 @@ globalMap = map;
 			MarkACountry(geocoder, "Australia")
 			MarkACountry(geocoder, "Haiti")
 			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "Libya")
 			MarkACountry(geocoder, "South Africa")
-			MarkACountry(geocoder, "Haiti")
-		}
+			MarkACountry(geocoder, "Haiti")		}
 		else if (chosen == "Desertification") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
@@ -347,6 +347,10 @@ globalMap = map;
 			MarkACountry(geocoder, "New Zealand")
 		  	MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Sri Lanka")
+
+			MarkACountry(geocoder, "Libya")		}
+
+
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Ethiopia")
 			MarkACountry(geocoder, "Sri Lanka")
@@ -415,10 +419,13 @@ globalMap = map;
 			var geocoder = new google.maps.Geocoder();
 			
 			MarkACountry(geocoder, "Macau")
-			MarkACountry(geocoder, "South AFrica")
 		}
 		else if (chosen == "WasteManagement") {
 			clearOverlays();
+
+			var geocoder = new google.maps.geocoder();
+			MarkACountry(geocoder, "Monaco")
+			MarkACountry(geocoder, "Libya")
 			var geocoder = new google.maps.geocoder();
 			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Monaco")
@@ -441,8 +448,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Djibouti")
 			MarkACountry(geocoder, "Guadeloupe")
 			MarkACountry(geocoder, "Mexico")
-    
-		}
+    		}
 
 
 		else if (chosen == "Pollution") {
