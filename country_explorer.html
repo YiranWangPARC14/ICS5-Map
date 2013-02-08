@@ -205,6 +205,7 @@ globalMap = map;
 		  MarkACountry(geocoder, "Monaco")
 		  MarkACountry(geocoder, "Djibouti")
 		  MarkACountry(geocoder, "Finland")
+		  MarkACountry(geocoder, "Fiji")
 		  }
 		else if (chosen == "SeaLevelRise") {
 
@@ -219,7 +220,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Taiwan")
 			MarkACountry(geocoder, "Italy")
 			MarkACountry(geocoder, "Djibouti")
-		    	MarkACountry(geocoder, "Denmark")
+	      	      	MarkACountry(geocoder, "Denmark")
                         MarkACountry(geocoder, "United Kingdom")
 			MarkACountry(geocoder, "Finland")
 		}
@@ -239,6 +240,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Djibouti")
             MarkACountry(geocoder, "Guadeloupe")
             MarkACountry(geocoder, "Honduras")
+	    MarkACountry(geocoder, "Fiji")
 		}
 		else if (chosen == "Pollution") {
 			clearOverlays();
@@ -260,7 +262,16 @@ globalMap = map;
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "South Africa")
 			MarkACountry(geocoder, "Ethiopia")
-
+	       }
+		else if (chosen == "Transportation") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Denmark")
+                }
+		else if (chosen == "EnergyProduction") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Denmark")
 		}
 		else if(chosen == "WaterPollution"){
 		  clearOverlays();
@@ -289,6 +300,11 @@ globalMap = map;
 		  var geocoder = new google.maps.Geocoder();
 		  MarkACountry(geocoder, "New Zealand")
 		  MarkACountry(geocoder, "Bulgaria")
+
+		  MarkACountry(geocoder, "Italy")
+                  MarkACountry(geocoder, "Honduras")
+				  MarkACountry(geocoder, "Armenia")
+
 		  MarkACountry(geocoder, "Italy")
 		  MarkACountry(geocoder, "Israel")
 		  MarkACountry(geocoder, "Guadeloupe")
@@ -304,6 +320,7 @@ globalMap = map;
 		  MarkACountry(geocoder, "Saudi Arabia")
 
 		}
+      
 
 	      else if (chosen == "SoilDegradation") {
 		  clearOverlays();
@@ -317,18 +334,6 @@ globalMap = map;
 		  MarkACountry(geocoder, "Bulgaria")
                 }
 
-				else if (chosen == "Transportation") {
-		  clearOverlays();
-		  var geocoder = new google.maps.Geocoder();
-		  MarkACountry(geocoder, "Denmark")
-                
-                }
-  
-		else if (chosen == "EnergyProduction") {
-		  clearOverlays();
-		  var geocoder = new google.maps.Geocoder();
-		  MarkACountry(geocoder, "Denmark")
-
 
 		}
 		else if (chosen == "Soil Degradation") {
@@ -339,9 +344,22 @@ globalMap = map;
 			MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Italy")
 			MarkACountry(geocoder, "Pakistan")		  
+
+			MarkACountry(geocoder, "New Zealand")
+		  	MarkACountry(geocoder, "Bulgaria")
+			MarkACountry(geocoder, "Belgium")
+			MarkACountry(geocoder, "Bulgaria")
+			MarkACountry(geocoder, "Sri Lanka")
+			MarkACountry(geocoder, "Armenia")
+
+
+		}
+
+
 			MarkACountry(geocoder, "New Zealand")
 		  	MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Sri Lanka")
+			MarkACountry(geocoder, "Fiji")
 
 			MarkACountry(geocoder, "Libya")		}
 
@@ -356,6 +374,7 @@ globalMap = map;
 	    MarkACountry(geocoder, "Bulgaria")
         }
 		else if (chosen == "AirPollution") {
+
 		else if (chosen == "AirPollution") {
 
 			clearOverlays();
@@ -365,11 +384,19 @@ globalMap = map;
 			MarkACountry(geocoder, "Pakistan")			
 			MarkACountry(geocoder, "Monaco")
 
+			MarkACountry(geocoder, "Saudi Arabia")
+			MarkACountry(geocoder, "Bulgaria")
+			MarkACountry(geocoder, "Germany")
+			MarkACountry(geocoder, "Belgium")
+		    MarkACountry(geocoder, "Armenia") 
+
+
 		        MarkACountry(geocoder, "Israel")
 			MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Germany")
 			MarkACountry(geocoder, "Belgium")
 		        MAarkACountry(geocoder, "United Kingdom") 
+
 
 		}
 
@@ -421,6 +448,8 @@ globalMap = map;
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
 		  MarkACountry(geocoder, "Germany")
+		  MarkACountry(geocoder, "Armenia")
+
 		}
 
 		else if (chosen == "Food Safety") {
@@ -623,6 +652,7 @@ essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
 essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Honduras'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
+essays['Denmark'] = $ajax({url: "denmark.html", async: false}).responseText;
 
 <script>
 essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
