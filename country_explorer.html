@@ -161,8 +161,32 @@ globalMap = map;
 		if (chosen == "Popullation") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+
+			MarkACountry(geocoder, "Israel")
+			MarkACountry(geocoder, "Netherlands")
+		
+
+		if (chosen == "ClimateChange") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "United States")
+			MarkACountry(geocoder, "Canada")
+			MarkACountry(geocoder, "Spain")
+			MarkACountry(geocoder, "Spain")
+			MarkACountry(geocoder, "Maldives")
+			MarkACountry(geocoder, "Spain")
+			MarkACountry(geocoder, "Pakistan")
+			MarkACountry(geocoder, "Haiti")
+			
+			MarkACountry(geocoder, "Finland")		
+			MarkACountry(geocoder, "Norway")
+			MarkACountry(geocoder, "New Zealand")                
+			MarkACountry(geocoder, "Monaco")
+			MarkACountry(geocoder, "Djibouti")
+			MarkACountry(geocoder, "Netherlands")			
 			MarkACountry(geocoder, "Israel")
 		}
+
 
 	         else if (chosen == "ClimateChange") {
 		  clearOverlays();
@@ -178,8 +202,9 @@ globalMap = map;
 		  MarkACountry(geocoder, "Monaco")
 		  MarkACountry(geocoder, "Djibouti")
 		  MarkACountry(geocoder, "Finland")
+		  MarkACountry(geocoder, "Fiji")
+		  MarkACountry(geocoder, "Israel")
 		  }
-
 		else if (chosen == "SeaLevelRise") {
 
 			clearOverlays();
@@ -191,11 +216,14 @@ globalMap = map;
 			MarkACountry(geocoder, "Maldives")
 			MarkACountry(geocoder, "Japan")
 			MarkACountry(geocoder, "Taiwan")
+			MarkACountry(geocoder, "Maldives")
+		}
 			MarkACountry(geocoder, "Italy")
 			MarkACountry(geocoder, "Djibouti")
-                        MarkACountry(geocoder, "United Kingdom")
+                       MarkACountry(geocoder, "United Kingdom")
 			MarkACountry(geocoder, "Finland")
 		}
+			}
 		
 
 		else if (chosen == "Deforestation") {
@@ -205,10 +233,59 @@ globalMap = map;
 			MarkACountry(geocoder, "Australia")
 			MarkACountry(geocoder, "Sri Lanka")
 			MarkACountry(geocoder, "Taiwan")
+
 			MarkACountry(geocoder, "Ethiopia")
+			MarkACountry(geocoder, "Djibouti")
+			MarkACountry(geocoder, "Laos")
+                        MarkACountry(geocoder, "Honduras")
+
+			MarkACountry(geocoder, "Ethiopia")
+                        MarkACountry(geocoder, "Congo")
+			MarkACountry(geocoder, "Finland")
+			MarkACountry(geocoder, "South Africa")
+			MarkACountry(geocoder, "Djibouti")
+            MarkACountry(geocoder, "Guadeloupe")
+
+            MarkACountry(geocoder, "Honduras")
+
+
+            MarkACountry(geocoder, "Honduras")
+	    MarkACountry(geocoder, "Fiji")
+
+		}
+		else if (chosen == "Pollution") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Taiwan")
+			MarkACountry(geocoder, "Australia")
+			MarkACountry(geocoder, "Haiti")
+			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "Libya")
+			MarkACountry(geocoder, "South Africa")
+			MarkACountry(geocoder, "Nigeria")
+			 MarkACountry(geocoder, "Finland")
+		}
+		
+		else if (chosen == "Lack of Enegy") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "South Africa")
+			MarkACountry(geocoder, "Ethiopia")
+			
+		}
+		else if(chosen == "WaterPollution"){
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Nigeria")
+			MarkACountry(geocoder, "Australia")
+			MarkACountry(geocoder, "Maldives")
+			MarkACountry(geocoder, "Haiti")
+			MarkACountry(geocoder, "Finland")
+			MarkACountry(geocoder, "New Zealand")
 			MarkACountry(geocoder, "Djibouti")
                         MarkACountry(geocoder, "Honduras")
 		}
+		
 		
 		else if (chosen == "Desertification") {
 			clearOverlays();
@@ -220,11 +297,18 @@ globalMap = map;
 			
 		}
 		
+		
 		else if(chosen == "WaterPollution"){
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Nigeria")
+		  MarkACountry(geocoder, "Australia")
+		  MarkACountry(geocoder, "Haiti")
 		  MarkACountry(geocoder, "New Zealand")
 		  MarkACountry(geocoder, "Bulgaria")
+		  MarkACountry(geocoder, "Italy")
+		  MarkACountry(geocoder, "Russia")
+		  MarkACountry(geocoder, "Armenia")
 		  MarkACountry(geocoder, "Italy")
 		  MarkACountry(geocoder, "Israel")
 		  MarkACountry(geocoder, "Guadeloupe")
@@ -238,6 +322,7 @@ globalMap = map;
 		  MarkACountry(geocoder, "Pakistan")
 		  MarkACountry(geocoder, "Belgium")
 		  MarkACountry(geocoder, "Saudi Arabia")
+		  MarkACountry(geocoder, "Djibouti")
 			
 		}
       
@@ -247,28 +332,41 @@ globalMap = map;
 		  var geocoder = new google.maps.Geocoder();
 		  MarkACountry(geocoder, "Ethiopia")
 		  MarkACountry(geocoder, "Sri Lanka")
-		  MarkACountry(geocoder, "Ethiopia")
 		  MarkACountry(geocoder, "Honduras")
 		  MarkACountry(geocoder, "Italy")
 		  MarkACountry(geocoder, "Guadeloupe")
 		  MarkACountry(geocoder, "Bulgaria")
-                }
+			MarkACountry(geocoder, "Macau")
+			MarkACountry(geocoder, "Monaco")
+			MarkACountry(geocoder, "Italy")
+			MarkACountry(geocoder, "Pakistan")		  
+			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "Belgium")
+			MarkACountry(geocoder, "Laos")
+			MarkACountry(geocoder, "Armenia")
+			MarkACountry(geocoder, "New Zealand")
+		    MarkACountry(geocoder, "Fiji")
+			MarkACountry(geocoder, "Libya")
+}
 
 		else if (chosen == "AirPollution") {
-			
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();		
-			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Pakistan")			
 			MarkACountry(geocoder, "Monaco")
 
-		        MarkACountry(geocoder, "Israel")
+			MarkACountry(geocoder, "Saudi Arabia")
 			MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Germany")
 			MarkACountry(geocoder, "Belgium")
+		    MarkACountry(geocoder, "Armenia") 
+
+
+		        MarkACountry(geocoder, "Israel")
 		        MAarkACountry(geocoder, "United Kingdom") 
 		
+
 		}
 		
 		else if (chosen == "FoodSafety") {
@@ -281,24 +379,44 @@ globalMap = map;
 			MarkACountry(geocoder, "Taiwan")
 			MarkACountry(geocoder, "Ethiopia")
                         MarkACountry(geocoder, "Congo")
-
 			MarkACountry(geocoder, "Djibouti")
+			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Guadeloupe")
 			MarkACountry(geocoder, "Mexico")
-    
+		}
+	
+
+		else if (chosen == "PublicEducation") {
+			
+			clearOverlays();
+			
+			var geocoder = new google.maps.Geocoder();
+			
+			MarkACountry(geocoder, "Macau")
+		}
+		else if (chosen == "WasteManagement") {
+			clearOverlays();
+
+			var geocoder = new google.maps.geocoder();
+			MarkACountry(geocoder, "Monaco")
+			MarkACountry(geocoder, "Libya")
+		}
+		
+		else if (chosen == "GreenhouseGasEmissions") {
+		        clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Russia")
 		}
 
-
-		else if (chosen == "Pollution") {
+		else if (chosen == "Radiation") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
-		  MarkACountry(geocoder, "Taiwan")
-		  MarkACountry(geocoder, "Nigeria")
-		  MarkACountry(geocoder, "Australia")
-	      	  MarkACountry(geocoder, "Haiti")
-	          MarkACountry(geocoder, "Finland")
-		  MarkACountry(geocoder, "New Zealand")
+		  MarkACountry(geocoder, "Germany")
+		  MarkACountry(geocoder, "Armenia")
+		  MarkACountry(geocoder, "Russia")
+		  
 		}
+
 		
 		else if (chosen == "Traffic") {
 		  clearOverlays();
@@ -310,18 +428,6 @@ globalMap = map;
 		  MarkACountry(geocoder, "Macau")
 		}
 		
-		else if (chosen == "WasteManagement") {
-		    clearOverlays();
-		    var geocoder = new google.maps.Geocoder();
-		    MarkACountry(geocoder, "Monaco")
-                }
-		
-		else if (chosen == "Radiation") {
-		  clearOverlays();
-		  var geocoder = new google.maps.Geocoder();
-		  MarkACountry(geocoder, "Norway")
-		  MarkACountry(geocoder, "Germany")
-                }
 		
 		else if (chosen == "PublicEducation") {
 			
@@ -330,24 +436,27 @@ globalMap = map;
 			MarkACountry(geocoder, "Macau")
 		}
 		
+                
                 else if (chosen == "War") {
                   clearOverlays();
                   var geocoder = new google.maps.Geocoder();
                   MarkACountry(geocoder, "Congo")
+				  MarkACountry(geocoder, "Laos")
                 }
 		
                 else if (chosen == "ResourceExploitation") {
                   clearOverlays();
+                  var geocoder = new google.maps/Geocoder();
+                  MarkACountry(geocoder, "Congo")
+                }
+		 }
+                else if (chosen == "Biological Diversity") {
                   var geocoder = new google.maps.Geocoder();
                   MarkACountry(geocoder, "Congo")
+		  MarkACountry(geocoder, "Norway")
 		 }
 		 
-                else if (chosen == "BiologicalDiversity") {
-                  clearOverlays();
-                  var geocoder = new google.maps.Geocoder();
-                  MarkACountry(geocoder, "Norway")
-                }
-		
+               
 		else {
 		//	alert(chosen)
 		}
@@ -400,6 +509,13 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change<BR>
 	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise<BR>
 	<Input type = radio Name = r1 Value = "Deforestation" onClick =GetSelectedItem()>Deforestation<BR>
+	Other environmental issues will go here.
+	</center>
+	<Input type = radio Name = r1 Value = "Pollution" onClick =GetSelectedItem()>Pollution<BR>
+	<Input type = radio Name = r1 Value = "LackofEnergy" onClick =GetSelectedItem()>Lack of Energy<BR>
+	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change<BR>
+	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise<BR>
+	<Input type = radio Name = r1 Value = "Deforestation" onClick =GetSelectedItem()>Deforestation<BR>
 	<Input type = radio Name = r1 Value = "WaterPollution" onClick = GetSelectedItem()>Water Pollution<BR>
 	<Input type = radio Name = r1 Value = "AirPollution" onClick =GetSelectedItem()>Air Pollution<BR>
 	<Input type = radio Name = r1 Value = "Traffic" onClick =GetSelectedItem()>Traffic<BR>
@@ -407,27 +523,61 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
 	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification<BR>
 	<Input type = radio Name = r1 Value = "Radiation" onClick =GetSelectedItem()>Radiation<BR>
+	<Input type = radio Name = r1 Value = "Food Safety" onClick =GetSelectedItem()>Food Safety<BR>
+	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise<BR>
+	<Input type = radio Name = r1 Value = "Deforestation" onClick =GetSelectedItem()>Deforestation<BR>
+	<Input type = radio Name = r1 Value = "WaterPollution" onClick = GetSelectedItem()>Water Pollution<BR>
+	<Input type = radio Name = r1 Value = "AirPollution" onClick =GetSelectedItem()>Air Pollution<BR>
+	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
+	<Input type = radio Name = r1 Value = "Population" onClick =GetSelectedItem()>Population<BR>
+	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
+	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification<BR>
+	<Input type = radio Name = r1 Value = "Radiation" onClick =GetSelectedItem()>Radiation<BR>
+	<Input type = radio Name = r1 Value = "Food Safety" onClick =GetSelectedItem()>Food Safety<BR>
+	//Other environmental issues will go here.
+	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
+        <Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>Waste Management<BR>
+        <Input type = radio Name = r1 Value = "Resource Exploitation" onClick =GetSelectedItem()>Waste Management<BR>
+	</center>
+
+	<Input type = radio Name = r1 Value = "Biological Diversity" onClick =GetSelectedItem()>Waste Management<BR>
+	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
+	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
+	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification<BR>
+	<Input type = radio Name = r1 Value = "Radiation" onClick =GetSelectedItem()>Radiation<BR>
 	<Input type = radio Name = r1 Value = "FoodSafety" onClick =GetSelectedItem()>Food Safety<BR>
 	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
-        <Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>War<BR>
-        <Input type = radio Name = r1 Value = "ResourceExploitation" onClick =GetSelectedItem()>Resource Exploitation<BR>
-	<Input type = radio Name = r1 Value = "BiologicalDiversity" onClick =GetSelectedItem()>Biological Diversity<BR>
+	<Input type = radio Name = r1 Value = "GreenhouseGasEmissions" onClick =GetSelectedItem()>GreenhouseGasEmissions<BR>
+
 	//Other environmental issues will go here.
 	</center>
+
 	</form>
     <div id="map_canvas"></div> 
   </body> 
 </html> 
+<script> 
+essays['Guyana'] = $.ajax({url: "Guyana.html", async: false}).responseText;
+essays['South Africa'] = $.ajax({url: "SouthAfrica.html", async: false}).responseText;
+essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
+essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
+essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
+essays['Russia'] = $.ajax({url: "Russia.html.html", async: false}).responseText; 
+essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
+essays['Honduras'] = $.ajax({url: "Belgium.html",async: false}].responseText;
+essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
 
 
 <script>
 essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
+
 essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
 essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
 essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
 essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Honduras'] = $.ajax({url: "Honduras.html",async: false}].responseText;
 essays['Nigeria'] = $.ajax({url: "Nigeria.html", async: false}).responseText;
+essats['Netherlands'] = $.ajax({url: "Netherlands.html", async: false}).responseText;
 essays['Israel'] = $.ajax({url: "Israel.html", async: false}).responseText
 </script> 
 
