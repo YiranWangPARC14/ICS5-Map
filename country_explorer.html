@@ -163,8 +163,27 @@ globalMap = map;
 			var geocoder = new google.maps.Geocoder();
 
 			MarkACountry(geocoder, "Israel")
-		}
+			MarkACountry(geocoder, "Netherlands")
 		
+
+		if (chosen == "ClimateChange") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "United States")
+			MarkACountry(geocoder, "Canada")
+			MarkACountry(geocoder, "Spain")
+			MarkACountry(geocoder, "Pakistan")
+			MarkACountry(geocoder, "Haiti")
+			
+			MarkACountry(geocoder, "Finland")		
+			MarkACountry(geocoder, "Norway")
+			MarkACountry(geocoder, "New Zealand")                
+			MarkACountry(geocoder, "Monaco")
+			MarkACountry(geocoder, "Djibouti")
+			MarkACountry(geocoder, "Netherlands")			
+			MarkACountry(geocoder, "Israel")
+		}
+
 
 	         else if (chosen == "ClimateChange") {
 		  clearOverlays();
@@ -196,9 +215,10 @@ globalMap = map;
 			MarkACountry(geocoder, "Taiwan")
 			MarkACountry(geocoder, "Italy")
 			MarkACountry(geocoder, "Djibouti")
-                        MarkACountry(geocoder, "United Kingdom")
+                       MarkACountry(geocoder, "United Kingdom")
 			MarkACountry(geocoder, "Finland")
-		}
+			MarkACountry(geocoder, "Netherlands")
+	}
 		
 
 		else if (chosen == "Deforestation") {
@@ -316,7 +336,6 @@ globalMap = map;
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();		
 			MarkACountry(geocoder, "Macau")
-			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Pakistan")			
 			MarkACountry(geocoder, "Monaco")
 
@@ -328,9 +347,6 @@ globalMap = map;
 
 
 		        MarkACountry(geocoder, "Israel")
-			MarkACountry(geocoder, "Bulgaria")
-			MarkACountry(geocoder, "Germany")
-			MarkACountry(geocoder, "Belgium")
 		        MAarkACountry(geocoder, "United Kingdom") 
 		
 
@@ -528,11 +544,8 @@ essays['Guyana'] = $.ajax({url: "Guyana.html", async: false}).responseText;
 essays['South Africa'] = $.ajax({url: "SouthAfrica.html", async: false}).responseText;
 essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
 essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
-
 essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
 essays['Russia'] = $.ajax({url: "Russia.html.html", async: false}).responseText; 
-
-
 essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Honduras'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
@@ -547,6 +560,7 @@ essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
 essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Honduras'] = $.ajax({url: "Honduras.html",async: false}].responseText;
 essays['Nigeria'] = $.ajax({url: "Nigeria.html", async: false}).responseText;
+essats['Netherlands'] = $.ajax({url: "Netherlands.html", async: false}).responseText;
 essays['Israel'] = $.ajax({url: "Israel.html", async: false}).responseText
 </script> 
 
