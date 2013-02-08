@@ -215,7 +215,8 @@ var countryEssay = "No essay yet";
 		  MarkACountry(geocoder, "New Zealand")
 		  MarkACountry(geocoder, "Bulgaria")
 		  MarkACountry(geocoder, "Italy")
-		}
+		  MarkACountry(geocoder, "Russia")
+		} 
 		else if (chosen == "Soil Degradation") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
@@ -275,7 +276,16 @@ var countryEssay = "No essay yet";
 			var geocoder = new google.maps.geocoder();
 			MarkACountry(geocoder, "Monaco")
 		}
-		else {
+		else if (chosen == "GreenhouseGasEmissions") {
+		        clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Russia")
+		}
+		else if (chosen == "Radioactivity") {
+		        clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Russia")
+		}
 		//	alert(chosen)
 		}
 
@@ -333,6 +343,8 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification<BR>
 	//Other environmental issues will go here.
 	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
+	<Input type = radio Name = r1 Value = "GreenhouseGasEmissions" onClick =GetSelectedItem()>GreenhouseGasEmissions<BR>
+	<Input type = radio Name = r1 Value = "Radioactivity" onClick =GetSelectedItem()>Radioactivity<BR>
 	</center>
 	</form>
     <div id="map_canvas"></div> 
@@ -343,6 +355,6 @@ markersArray.push(marker);
 essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
 essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
 essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
-
+essays['Russia'] = $.ajax({url: "Russia.html.html", async: false}).responseText; 
 
 </script> 
