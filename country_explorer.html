@@ -259,8 +259,13 @@ globalMap = map;
 			MarkACountry(geocoder, "South Africa")
 			MarkACountry(geocoder, "Nigeria")
 			 MarkACountry(geocoder, "Finland")
+			 MarkACountry(geocoder, "Ghana")
 		}
-		
+		else if (chosen == "Poaching") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Ghana")
+			
 		else if (chosen == "Lack of Enegy") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
@@ -319,7 +324,7 @@ globalMap = map;
 		  MarkACountry(geocoder, "Italy")
 		  MarkACountry(geocoder, "Guadeloupe")
 		  MarkACountry(geocoder, "Bulgaria")
-			MarkACountry(geocoder, "Macau")
+		    MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Italy")
 			MarkACountry(geocoder, "Pakistan")		  
@@ -330,6 +335,7 @@ globalMap = map;
 			MarkACountry(geocoder, "New Zealand")
 		    MarkACountry(geocoder, "Fiji")
 			MarkACountry(geocoder, "Libya")
+			MarkACountry(geocoder, "Ghana")
 }
 
 		else if (chosen == "AirPollution") {
