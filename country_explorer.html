@@ -20,11 +20,11 @@
       src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script> 
 	  <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
-	
+
 
 	var essays = {}; // New object
 
-	
+
       var geocoder;
       var marker;
 		var markersArray = [];
@@ -164,7 +164,7 @@ globalMap = map;
 
 			MarkACountry(geocoder, "Israel")
 			MarkACountry(geocoder, "Netherlands")
-		
+
 
 		if (chosen == "ClimateChange") {
 			clearOverlays();
@@ -177,7 +177,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Spain")
 			MarkACountry(geocoder, "Pakistan")
 			MarkACountry(geocoder, "Haiti")
-			
+
 			MarkACountry(geocoder, "Finland")		
 			MarkACountry(geocoder, "Norway")
 			MarkACountry(geocoder, "New Zealand")                
@@ -215,6 +215,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Maldives")
 			MarkACountry(geocoder, "Japan")
+	      	      	MarkACountry(geocoder, "Denmark")
 			MarkACountry(geocoder, "Taiwan")
 			MarkACountry(geocoder, "Maldives")
 		}
@@ -224,7 +225,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Finland")
 		}
 			}
-		
+
 
 		else if (chosen == "Deforestation") {
 			clearOverlays();
@@ -273,13 +274,13 @@ globalMap = map;
 			MarkACountry(geocoder, "Nigeria")
 			 MarkACountry(geocoder, "Finland")
 		}
-		
+
 		else if (chosen == "Lack of Enegy") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "South Africa")
 			MarkACountry(geocoder, "Ethiopia")
-			
+
 		}
 		else if(chosen == "WaterPollution"){
 		  clearOverlays();
@@ -297,8 +298,8 @@ globalMap = map;
 			MarkACountry(geocoder, "Djibouti")
                         MarkACountry(geocoder, "Honduras")
 		}
-		
-		
+
+
 		else if (chosen == "Desertification") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
@@ -306,10 +307,10 @@ globalMap = map;
 
 			MarkACountry(geocoder, "Nigeria")
 			MarkACountry(geocoder, "Ethiopia")
-			
+
 		}
-		
-		
+
+
 		else if(chosen == "WaterPollution"){
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
@@ -335,7 +336,7 @@ globalMap = map;
 		  MarkACountry(geocoder, "Belgium")
 		  MarkACountry(geocoder, "Israel")
 		}
-	
+
 		}
 		else if (chosen == "Soil Degradation") {
 			clearOverlays();
@@ -348,10 +349,10 @@ globalMap = map;
             MarkACountry(geocoder, "Guadeloupe")
 	    MarkACountry(geocoder, "Bulgaria")
         }
-		
+
 
 		else if (chosen == "AirPollution") {
-			
+
 			clearOverlays();
 
 			var geocoder = new google.maps.Geocoder();		
@@ -364,7 +365,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Belgium")
 			MarkACountry (geocoder, "Guatemala")
 		else if (chosen == "AirPollution") {
-			
+
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();		
 			MarkACountry(geocoder, "Macau")
@@ -374,10 +375,10 @@ globalMap = map;
 			MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Germany")
 			MarkACountry(geocoder, "Belgium")
-	      
+
 		  MarkACountry(geocoder, "Saudi Arabia")
 		  MarkACountry(geocoder, "Djibouti")
-			
+
 		}
       
 
@@ -419,10 +420,10 @@ globalMap = map;
 
 		        MarkACountry(geocoder, "Israel")
 		        MAarkACountry(geocoder, "United Kingdom") 
-		
+
 
 		}
-		
+
 		else if (chosen == "FoodSafety") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
@@ -438,14 +439,14 @@ globalMap = map;
 			MarkACountry(geocoder, "Guadeloupe")
 			MarkACountry(geocoder, "Mexico")
 		}
-	
+
 
 		else if (chosen == "PublicEducation") {
-			
+
 			clearOverlays();
-			
+
 			var geocoder = new google.maps.Geocoder();
-			
+
 			MarkACountry(geocoder, "Macau")
 		}
 		else if (chosen == "WasteManagement") {
@@ -455,7 +456,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Libya")
 		}
-		
+
 		else if (chosen == "GreenhouseGasEmissions") {
 		        clearOverlays();
 			var geocoder = new google.maps.Geocoder();
@@ -468,10 +469,10 @@ globalMap = map;
 		  MarkACountry(geocoder, "Germany")
 		  MarkACountry(geocoder, "Armenia")
 		  MarkACountry(geocoder, "Russia")
-		  
+
 		}
 
-		
+
 		else if (chosen == "Traffic") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
@@ -481,7 +482,7 @@ globalMap = map;
 		  MarkACountry(geocoder, "Belgium")
 		  MarkACountry(geocoder, "Macau")
 		}
-		
+
 		else if (chosen == "WasteManagement") {
 			clearOverlays();
 			var geocoder = new google.maps.geocoder();
@@ -490,7 +491,7 @@ globalMap = map;
 		    var geocoder = new google.maps.Geocoder();
 		    MarkACountry(geocoder, "Monaco")
                 }
-		
+
 		else if (chosen == "Radiation") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
@@ -498,16 +499,16 @@ globalMap = map;
 		  MarkACountry(geocoder, "Germany")
 		  MarkACountry (geocoder, "Guatemala")
                 }
-		
 
-		
+
+
 		else if (chosen == "PublicEducation") {
-			
+
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Macau")
 		}
-		
+
                 
                 else if (chosen == "War") {
                   clearOverlays();
@@ -515,19 +516,31 @@ globalMap = map;
                   MarkACountry(geocoder, "Congo")
 				  MarkACountry(geocoder, "Laos")
                 }
-		
+
                 else if (chosen == "ResourceExploitation") {
                   clearOverlays();
                   var geocoder = new google.maps/Geocoder();
                   MarkACountry(geocoder, "Congo")
                 }
-		 }
+
                 else if (chosen == "Biological Diversity") {
                   var geocoder = new google.maps.Geocoder();
                   MarkACountry(geocoder, "Congo")
 		  MarkACountry(geocoder, "Norway")
 		 }
-		 
+
+		else if (chosen == "Transportation") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Denmark") 
+                }
+  
+		else if (chosen == "EnergyProduction") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Denmark")
+		}
+
                
 		else {
 		//	alert(chosen)
@@ -542,9 +555,9 @@ globalMap = map;
 	}
 	function MarkACountry(geocoder, country)
 	{
-	
+
 	{
-	
+
  	geocoder.geocode({ 'address': country},function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         //globalMap.setCenter(results[0].geometry.location);
@@ -568,7 +581,7 @@ markersArray.push(marker);
     </script> 
   </head> 
   <body> 
-	
+
      
     <p align="center" id="country"> 
 	<B>ENVIRONMENTAL ISSUES MAP BY ICS 5</B><BR>
@@ -598,6 +611,8 @@ markersArray.push(marker);
         <Input type = radio Name = r1 Value = "Resource Exploitation" onClick =GetSelectedItem()>Resource Exploitation<BR>
 	<Input type = radio Name = r1 Value = "Biological Diversity" onClick =GetSelectedItem()>Biological Diversity<BR>
 	<Input type = radio Name = r1 Value = "GreenhouseGasEmissions" onClick =GetSelectedItem()>GreenhouseGasEmissions<BR>
+	<Input type = radio Name = r1 Value = "Transportation" onClick =GetSelectedItem()>Transportation<BR>
+	<Input type = radio Name = r1 Value = "EnergyProduction" onClick =GetSelectedItem()>Energy Production<BR>
 
 	//Other environmental issues will go here.
 	</center>
@@ -618,6 +633,6 @@ essays['Honduras'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
 essays['Nigeria'] = $.ajax({url: "Nigeria.html", async: false}).responseText;
 essats['Netherlands'] = $.ajax({url: "Netherlands.html", async: false}).responseText;
+essats['Denmark'] = $.ajax({url: "Denmark.html", async: false}).responseText;
 essays['Israel'] = $.ajax({url: "Israel.html", async: false}).responseText
 </script> 
-
