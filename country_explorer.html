@@ -1,23 +1,23 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-    <meta charset="utf-8"> 
-    <title> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
     ICS 5 Class project
-    </title> 
+    </title>
     <link
     href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css"
-    rel="stylesheet" type="text/css"> 
-    <style type="text/css"> 
+    rel="stylesheet" type="text/css">
+    <style type="text/css">
       #country {
         text-align: center;
       }
       #map_canvas {
         height: 75%;
       }
-    </style> 
+    </style>
     <script type="text/javascript"
-      src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script> 
+      src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
 	  <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
 
@@ -28,9 +28,9 @@
       var geocoder;
       var marker;
 		var markersArray = [];
-infowindow = new google.maps.InfoWindow();	 
+infowindow = new google.maps.InfoWindow();
       var chartBase = 'https://chart.googleapis.com/chart?chst=';
- 
+
       function getCountry(results) {
          var geocoderAddressComponent,addressComponentTypes,address;
          for (var i in results) {
@@ -178,12 +178,12 @@ globalMap = map;
 			MarkACountry(geocoder, "Pakistan")
 			MarkACountry(geocoder, "Haiti")
 
-			MarkACountry(geocoder, "Finland")		
+			MarkACountry(geocoder, "Finland")
 			MarkACountry(geocoder, "Norway")
-			MarkACountry(geocoder, "New Zealand")                
+			MarkACountry(geocoder, "New Zealand")
 			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Djibouti")
-			MarkACountry(geocoder, "Netherlands")			
+			MarkACountry(geocoder, "Netherlands")
 			MarkACountry(geocoder, "Israel")
 		}
 
@@ -209,6 +209,7 @@ globalMap = map;
 
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Sweden")
 			MarkACountry(geocoder, "United States")
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
@@ -285,6 +286,7 @@ globalMap = map;
 		else if(chosen == "WaterPollution"){
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Sweden")
 			MarkACountry(geocoder, "Nigeria")
 			MarkACountry(geocoder, "Australia")
 			MarkACountry(geocoder, "Maldives")
@@ -355,9 +357,9 @@ globalMap = map;
 
 			clearOverlays();
 
-			var geocoder = new google.maps.Geocoder();		
+			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Macau")
-			MarkACountry(geocoder, "Pakistan")			
+			MarkACountry(geocoder, "Pakistan")
 			MarkACountry(geocoder, "Monaco")
 		        MarkACountry(geocoder, "Israel")
 			MarkACountry(geocoder, "Bulgaria")
@@ -368,9 +370,9 @@ globalMap = map;
 		else if (chosen == "AirPollution") {
 
 			clearOverlays();
-			var geocoder = new google.maps.Geocoder();		
+			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Macau")
-			MarkACountry(geocoder, "Pakistan")			
+			MarkACountry(geocoder, "Pakistan")
 			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Saudi Arabia")
 			MarkACountry(geocoder, "Bulgaria")
@@ -381,7 +383,7 @@ globalMap = map;
 		  MarkACountry(geocoder, "Djibouti")
 
 		}
-      
+
 
 	      else if (chosen == "SoilDegradation") {
 		  clearOverlays();
@@ -395,7 +397,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Italy")
-			MarkACountry(geocoder, "Pakistan")		  
+			MarkACountry(geocoder, "Pakistan")
 			MarkACountry(geocoder, "New Zealand")
 			MarkACountry(geocoder, "Belgium")
 			MarkACountry(geocoder, "Laos")
@@ -407,21 +409,20 @@ globalMap = map;
 
 		else if (chosen == "AirPollution") {
 			clearOverlays();
-			var geocoder = new google.maps.Geocoder();		
+			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Malaysia")
-			MarkACountry(geocoder, "Pakistan")			
+			MarkACountry(geocoder, "Pakistan")
 			MarkACountry(geocoder, "Monaco")
-
 			MarkACountry(geocoder, "Saudi Arabia")
 			MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Germany")
 			MarkACountry(geocoder, "Belgium")
-		    MarkACountry(geocoder, "Armenia") 
+		    MarkACountry(geocoder, "Armenia")
 
 
 		        MarkACountry(geocoder, "Israel")
-		        MAarkACountry(geocoder, "United Kingdom") 
+		        MAarkACountry(geocoder, "United Kingdom")
 
 
 		}
@@ -516,7 +517,7 @@ globalMap = map;
 			MarkACountry(geocoder, "Macau")
 		}
 
-                
+
                 else if (chosen == "War") {
                   clearOverlays();
                   var geocoder = new google.maps.Geocoder();
@@ -539,16 +540,20 @@ globalMap = map;
 		else if (chosen == "Transportation") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
-		  MarkACountry(geocoder, "Denmark") 
+		  MarkACountry(geocoder, "Denmark")
                 }
-  
+
 		else if (chosen == "EnergyProduction") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
 		  MarkACountry(geocoder, "Denmark")
 		}
+		else if (chosen == "AcidRain") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Sweden")
+		}
 
-               
 		else {
 		//	alert(chosen)
 		}
@@ -578,24 +583,24 @@ markersArray.push(marker);
       }
     });
 	}
- 
+
     google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
 
 
-    </script> 
-  </head> 
-  <body> 
+    </script>
+  </head>
+  <body>
 
-     
-    <p align="center" id="country"> 
+
+    <p align="center" id="country">
 	<B>ENVIRONMENTAL ISSUES MAP BY ICS 5</B><BR>
 		This map shows the top environmental issues around the world.<BR>
 	Click on a country to see a description of the top issues in that country. <br>
 	You can also click on one of the environmental issues below to see the countries where that issue is in the top three.<BR>
-		This map is a class project by the "ICS 5: Environmental Issues in Information Technology" undergraduate course at <a href = "http://www.uci.edu">UCI</a>.  </p> 
+		This map is a class project by the "ICS 5: Environmental Issues in Information Technology" undergraduate course at <a href = "http://www.uci.edu">UCI</a>.  </p>
 	 <FORM NAME = f1>
 		<center>
 	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change<BR>
@@ -621,21 +626,22 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "GreenhouseGasEmissions" onClick =GetSelectedItem()>GreenhouseGasEmissions<BR>
 	<Input type = radio Name = r1 Value = "Transportation" onClick =GetSelectedItem()>Transportation<BR>
 	<Input type = radio Name = r1 Value = "EnergyProduction" onClick =GetSelectedItem()>Energy Production<BR>
-
+	<Input type = radio Name = r1 Value = "AcidRain" onClick =GetSelectedItem()>Acid Rain<BR>
 	//Other environmental issues will go here.
 	</center>
 
 	</form>
-    <div id="map_canvas"></div> 
-  </body> 
-</html> 
-<script> 
+    <div id="map_canvas"></div>
+  </body>
+</html>
+<script>
+essays['Sweden'] = $.ajax({url: "Sweden.html", async: false}).responseText;
 essays['Guyana'] = $.ajax({url: "Guyana.html", async: false}).responseText;
 essays['South Africa'] = $.ajax({url: "SouthAfrica.html", async: false}).responseText;
 essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
 essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
 essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
-essays['Russia'] = $.ajax({url: "Russia.html.html", async: false}).responseText; 
+essays['Russia'] = $.ajax({url: "Russia.html.html", async: false}).responseText;
 essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Honduras'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
@@ -644,4 +650,4 @@ essays['Nigeria'] = $.ajax({url: "Nigeria.html", async: false}).responseText;
 essats['Netherlands'] = $.ajax({url: "Netherlands.html", async: false}).responseText;
 essats['Denmark'] = $.ajax({url: "Denmark.html", async: false}).responseText;
 essays['Israel'] = $.ajax({url: "Israel.html", async: false}).responseText
-</script> 
+</script>
