@@ -58,7 +58,7 @@ infowindow = new google.maps.InfoWindow();
       }
 var globalMap;
       function initialize() {
-        // created using http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+         created using http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
         var styleOff = [{ visibility: 'off' }];
         var stylez = [
           {   featureType: 'administrative',
@@ -102,15 +102,15 @@ globalMap = map;
 			            position: new google.maps.LatLng(53.012924,18.59848),
 			            map: map
 			        });
-	//		alert("1");
+			alert("1");
 			clearOverlays();
-	//		alert("2");
+			alert("2");
 					markersArray.push(marker);
-	//				alert("3");
+					alert("3");
 					          var redMarkerIcon = chartBase +
               'd_map_xpin_letter&chld=pin|+|C40000|000000|FF0000';
-          //marker.setIcon(redMarkerIcon);
-          //map.setCenter(mouseEvent.latLng);
+          marker.setIcon(redMarkerIcon);
+          map.setCenter(mouseEvent.latLng);
           geocoder.geocode(
               {'latLng': mouseEvent.latLng},
               function(results, status) {
@@ -119,11 +119,11 @@ globalMap = map;
                   var country = getCountry(results);
                   marker.setPosition(mouseEvent.latLng);
                   marker.setIcon(getCountryIcon(country));
-                 // headingP.innerHTML = country.long_name+ ' MAKE A BIG IF-THEN THING, SORTED BY COUNTRY.LONG_NAME TO PASTE THE ESSAYS<br> ';
-                 // if (country.long_name =="Norway") headingP.innerHTML += norwayEssay;
+                  headingP.innerHTML = country.long_name+ ' MAKE A BIG IF-THEN THING, SORTED BY COUNTRY.LONG_NAME TO PASTE THE ESSAYS<br> ';
+                  if (country.long_name =="Norway") headingP.innerHTML += norwayEssay;
 				var countryEssay = "No essay yet";
 				if (essays[country.long_name] != null)countryEssay = essays[country.long_name].toString();
-//				if (countryEssay == null)countryEssay = "No essay yet."
+				if (countryEssay == null)countryEssay = "No essay yet."
 				infowindow.setContent(countryEssay	);
 				infowindow.open(map, marker);
 
@@ -132,8 +132,8 @@ globalMap = map;
                   marker.setPosition(mouseEvent.latLng);
                   marker.setIcon(
                       getMsgIcon('Oups, I have no idea, are you on water?'));
-              //    headingP.innerHTML = 'Oups, ' +
-                //      'I have no idea, are you on water?';
+                headingP.innerHTML = 'Oups, ' +
+                    'I have no idea, are you on water?';
                 }
                 if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
                   marker.setPosition(mouseEvent.latLng);
@@ -141,14 +141,14 @@ globalMap = map;
                       getMsgIcon('Whoa! Hold your horses :) You are quick! ' +
                           'too quick!')
                       );
-                  //headingP.innerHTML = 'Whoa! You are just too quick!';
+                  headingP.innerHTML = 'Whoa! You are just too quick!';
                 }
               });
        });
      }
 	function GetSelectedItem() {
-	//	alert("Hola");
-	//	headingP.innerHTML = "selected";
+	alert("Hola");
+	headingP.innerHTML = "selected";
 		chosen = ""
 		len = document.f1.r1.length
 
@@ -447,12 +447,12 @@ globalMap = map;
 		 
                
 		else {
-		//	alert(chosen)
+		alert(chosen)
 		}
 
 	}
 	function clearOverlays() {
-	//	alert("Clearing")
+	alert("Clearing")
 	  for (var i = 0; i < markersArray.length; i++ ) {
 	    markersArray[i].setMap(null);
 	  }
@@ -464,7 +464,7 @@ globalMap = map;
 	
  	geocoder.geocode({ 'address': country},function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
-        //globalMap.setCenter(results[0].geometry.location);
+       globalMap.setCenter(results[0].geometry.location);
         var marker = new google.maps.Marker({
             map: globalMap,
             position: results[0].geometry.location
