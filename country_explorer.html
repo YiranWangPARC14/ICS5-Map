@@ -199,8 +199,9 @@ var countryEssay = "No essay yet";
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Australia")
-			
+			MarkACountry(geocoder, "Malaysia")
 			MarkACountry(geocoder, "Djibouti")
+
 		
 		}
 else if (chosen == "Pollution")
@@ -252,6 +253,8 @@ else if(chosen == "WaterPollution")
 			MarkACountry(geocoder, "Maldives")
 			
 			MarkACountry(geocoder, "Finland")
+			
+			MarkACountry(geocoder, "Malaysia")
                         
 			MarkACountry(geocoder, "Honduras")
 			
@@ -441,19 +444,7 @@ else if (chosen == "WasteManagement")
 			MarkACountry(geocoder, "Mexico")
 			
 		}
-
-else if (chosen == "FreshWaterScarcity") 
-{
-			
-			clearOverlays();
-			
-			var geocoder = new google.maps.Geocoder();
-			
-			MarkACountry(geocoder, "Malaysia")
-			
-		}
-
-else if (chosen == "Radiation") {
+else if (chosen == "Radiation"){
 			
 			clearOverlays();
 			
@@ -639,7 +630,6 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
 	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
 	<Input type = radio Name = r1 Value = "GreenhouseGasEmissions" onClick =GetSelectedItem()>Green House Gas Emissions<BR>
-	<Input type = radio Name = r1 Value = "FreshWaterScarcity" onClick =GetSelectedItem()>Fresh Water Scarcity<BR>
 	<Input type = radio Name = r1 Value = "Radiation" onClick =GetSelectedItem()>Radiation<BR>
 	<Input type = radio Name = r1 Value = "Traffic" onClick =GetSelectedItem()>Traffic<BR>
 	<Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>War<BR>
@@ -650,6 +640,7 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "AcidRain" onClick =GetSelectedItem()>Acid Rain<BR>
 	<Input type = radio Name = r1 Value = "VehicleCongestion" onClick =GetSelectedItem()>Vehicle Congestion<BR>
 	<Input type = radio Name = r1 Value = "EnvironmentalInequality" onClick =GetSelectedItem()>Environmental Inequality<BR>
+ 
 	Other environmental issues will go here.
 	</center>
 	</form>
