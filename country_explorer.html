@@ -180,6 +180,41 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "United States")
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
+			MarkACountry(geocoder, "Pakistan")
+			MarkACountry(geocoder, "Haiti")
+			MarkACountry(geocoder, "France")
+			MarkACountry(geocoder, "Finland")		
+			MarkACountry(geocoder, "Norway")
+			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "New Zealand")                
+			MarkACountry(geocoder, "Monaco")
+			MarkACountry(geocoder, "Djibouti")
+		}
+
+			MarkACountry(geocoder, "Djibouti")
+			MarkACountry(geocoder, "Finland")			
+
+		 		}
+
+			MarkACountry(geocoder, "Israel")
+		}
+
+	         else if (chosen == "ClimateChange") {
+		  clearOverlays();
+		b  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "United States")
+		  MarkACountry(geocoder, "Canada")
+		  MarkACountry(geocoder, "Spain")
+		  MarkACountry(geocoder, "Pakistan")
+		  MarkACountry(geocoder, "Haiti")
+		  MarkACountry(geocoder, "Finland")
+		  MarkACountry(geocoder, "Norway")
+		  MarkACountry(geocoder, "New Zealand")
+		  MarkACountry(geocoder, "Monaco")
+		  MarkACountry(geocoder, "Djibouti")
+		  MarkACountry(geocoder, "Finland")
+		  MarkACountry(geocoder, "Fiji")
+		  }
 			MarkACountry(geocoder, "Djibouti")
 			MarkACountry(geocoder, "Monaco")
 		}
@@ -222,6 +257,24 @@ else if (chosen == "Pollution")
 			
 			MarkACountry(geocoder, "India")
 			MarkACountry(geocoder, "Libya")
+			MarkACountry(geocoder, "South Africa")
+			MarkACountry(geocoder, "Haiti")	
+            MarkACountry(geocoder, "France")			}
+		else if (chosen == "Desertification") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "Nigeria")
+		}
+		else if (chosen == "Lack of Enegy") {
+			clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry(geocoder, "South Africa")
+			MarkACountry(geocoder, "Ethiopia")
+			
+		}
+		else if(chosen == "WaterPollution"){
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "South Africa")
 			MarkACountry(geocoder, "Nigeria")
 			MarkACountry(geocoder, "Finland")
@@ -427,6 +480,25 @@ else if (chosen == "WasteManagement")
 			var geocoder = new google.maps.geocoder();
 			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Libya")
+			var geocoder = new google.maps.geocoder();
+		}
+		
+		else if (chosen == "Radiation") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Germany")
+		  MarkACountry(geocoder, "Armenia")
+		  MarlACountry(geocoder, "France")
+		  
+		}
+		
+		else if (chosen == "Food Safety") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Germany")
+		}
+			MarkACountry(geocoder, "Macau")
+			MarkACountry(geocoder, "Djibouti")
 			MarkACountry(geocoder, "Mongolia")
 		}else if (chosen == "GreenhouseGasEmissions") {
 		        clearOverlays();
@@ -695,6 +767,7 @@ essays['Laos'] = $.ajax({url: "Laos.html", async: false}).responseText
     essays['Afghanistan'] = $.ajax({url: "Afghanistan.html", async: false}).responseText;
     essays['Guadeloupe'] = $.ajax({url: "Guadeloupe.html", async: false}).responseText;
 	essays['India'] = $.ajax({url: "India.html", async: false}).responseText;
+	essays['France'] = $.ajax({url: "france.html", async: false}).responseText;
     
 
 </script> 
