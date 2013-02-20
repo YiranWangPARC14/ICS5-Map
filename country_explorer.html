@@ -181,6 +181,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
 			MarkACountry(geocoder, "Djibouti")
+			MarkACountry(geocoder, "Monaco")
 		}
 		else if (chosen == "SeaLevelRise") {
 			clearOverlays();
@@ -276,8 +277,7 @@ else if(chosen == "WaterPollution")
 			MarkACountry(geocoder, "Sri Lanka")
          		MarkACountry(geocoder, "Ethiopia")
           		MarkACountry(geocoder, "Macau")
-          		MarkACountry(geocoder, "Monaco")
-            		MarkACountry(geocoder, "Pakistan")
+          		MarkACountry(geocoder, "Pakistan")
             		MarkACountry(geocoder, "Belgium")
 			
 			MarkACountry(geocoder, "Switzerland")
@@ -323,9 +323,8 @@ else if (chosen == "SoilDegradation")
 	  	 	
 			MarkACountry(geocoder, "Macau")
 			
-			MarkACountry(geocoder, "Monaco")
-		 	
-			MarkACountry(geocoder, "United Kingdom")
+			
+MarkACountry(geocoder, "United Kingdom")
 		 	
 			MarkACountry(geocoder, "Belgium")
 			
@@ -677,6 +676,8 @@ essays['Sweden'] = $.ajax({url: "Sweden.html", async: false}).responseText;
 	essays['Hong Kong'] = $.ajax({url: "HongKong.html", async: false}).responseText;
 	essays['Switzerland'] = $.ajax({url: "Switzerland.html", async: false}).responseText;
 	essays['Djibouti'] = $.ajax({url: "djibouti.html",async: false}).responseText; 
+	essays['Monaco'] = $.ajax({url: "Monaco.html", async: false}).responseText;	
+	essays['Finland'] = $.ajax({url: "Finland.html", async: false}).responseText;
 	essays['Taiwan'] = $.ajax({url: "Taiwan.html",async: false}).responseText;
 	essays['Guatemala'] = $.ajax({url: "Guatemala.html", async: false}).responseText;
 
