@@ -235,10 +235,9 @@ var countryEssay = "No essay yet";
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Australia")
+		  	MarkACountry(geocoder, "Pakistan")
+			
 			MarkACountry(geocoder, "Malaysia")
-			MarkACountry(geocoder, "Djibouti")
-
-		
 		}
 else if (chosen == "Pollution")
  {
@@ -254,6 +253,8 @@ else if (chosen == "Pollution")
 			MarkACountry(geocoder, "Haiti")
 			
 			MarkACountry(geocoder, "New Zealand")
+
+		  	MarkACountry(geocoder, "Pakistan")
 			
 			MarkACountry(geocoder, "India")
 			MarkACountry(geocoder, "Libya")
@@ -381,7 +382,6 @@ else if (chosen == "SoilDegradation")
 		  	MarkACountry(geocoder, "Israel")
 		 	MarkACountry(geocoder, "Honduras")
 		  	MarkACountry(geocoder, "Ethiopia")
-		  	MarkACountry(geocoder, "Pakistan")
 			
 			MarkACountry(geocoder, "Israel")
 	  	 	
@@ -764,6 +764,7 @@ essays['Laos'] = $.ajax({url: "Laos.html", async: false}).responseText
 	essays['Taiwan'] = $.ajax({url: "Taiwan.html",async: false}).responseText;
 	essays['Saudi Arabia'] = $.ajax({url: "SaudiArabia.html",async: false}).responseText;
 	essays['Guatemala'] = $.ajax({url: "Guatemala.html", async: false}).responseText;
+	essays['Pakistan'] = $.ajax({url: "Pakistan.html", async: false}).responseText;
     essays['Afghanistan'] = $.ajax({url: "Afghanistan.html", async: false}).responseText;
 
     
