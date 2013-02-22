@@ -209,6 +209,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Australia")
 		  	MarkACountry(geocoder, "Pakistan")
 			MarkACountry(geocoder, "Malaysia")
+			MarkACountry(geocoder, "Austria")
 		}
 		
 		
@@ -318,8 +319,8 @@ var countryEssay = "No essay yet";
 			
 		}
 
-else if (chosen == "AirPollution")
- {
+		else if (chosen == "AirPollution")
+ 		{
 			
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
@@ -489,6 +490,7 @@ else if (chosen == "AirPollution")
 			var geocoder = new google.maps.Geocoder();
 			
 			MarkACountry(geocoder, "Sweden")
+			MarkACountry(geocoder, "Austria")
 		
 		}
 		
@@ -510,7 +512,14 @@ else if (chosen == "AirPollution")
 			
 			MarkACountry(geocoder, "Hong Kong")
 			}
-
+		else if (chosen == "EndangeredSpecies"){
+			
+			clearOverlays();
+			
+			var geocoder = new google.maps.Geocoder();
+			
+			MarkACountry(geocoder, "Austria")
+			}		
 		else {
 		//	alert(chosen)
 		}
@@ -582,7 +591,7 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "AcidRain" onClick =GetSelectedItem()>Acid Rain<BR>
 	<Input type = radio Name = r1 Value = "VehicleCongestion" onClick =GetSelectedItem()>Vehicle Congestion<BR>
 	<Input type = radio Name = r1 Value = "EnvironmentalInequality" onClick =GetSelectedItem()>Environmental Inequality<BR>
- 
+ 	<Input type = radio Name = r1 Value = "EndangeredSpecies" onClick =GetSelectedItem()>Endangered Species<BR>
 	Other environmental issues will go here.
 	</center>
 	</form>
@@ -625,6 +634,6 @@ essays['Guadeloupe'] = $.ajax({url: "Guadeloupe.html", async: false}).responseTe
 essays['India'] = $.ajax({url: "India.html", async: false}).responseText;
 ssays['France'] = $.ajax({url: "france.html", async: false}).responseText;
 essays['Germany'] = $.ajax({url: "Germany.html", async: false}).responseText;
-    
+essays['Austria'] = $.ajax({url: "Austria.html", async: false}).responseText; 
 
 </script> 
