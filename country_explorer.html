@@ -15,6 +15,19 @@
       #map_canvas {
         height: 75%;
       }
+      	.container {
+        width: 100%;
+        clear: both;
+	text-align:center;
+    }
+	.container input {
+        clear: both;
+    }
+    .form{
+    text-align:left; 
+    margin:0 auto;
+    display:inline-block
+	}
     </style> 
     <script type="text/javascript"
       src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script> 
@@ -569,8 +582,9 @@ markersArray.push(marker);
 	Click on a country to see a description of the top issues in that country. <br>
 	You can also click on one of the environmental issues below to see the countries where that issue is in the top three.<BR>
 		This map is a class project by the "ICS 5: Environmental Issues in Information Technology" undergraduate course at <a href = "http://www.uci.edu">UCI</a>.  </p> 
+    <div class="container">
+      <div class="form">
 	 <FORM NAME = f1>
-		<center>
 	<Input type = radio Name = r1 Value = "Population" onClick =GetSelectedItem()>Population<BR>
 	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change<BR>
 	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise<BR>
@@ -597,8 +611,10 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "EnvironmentalInequality" onClick =GetSelectedItem()>Environmental Inequality<BR>
  	<Input type = radio Name = r1 Value = "EndangeredSpecies" onClick =GetSelectedItem()>Endangered Species<BR>
 	Other environmental issues will go here.
-	</center>
+	
 	</form>
+      </div>
+    </div>
     <div id="map_canvas"></div> 
   </body> 
 </html> 
