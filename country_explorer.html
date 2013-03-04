@@ -15,6 +15,19 @@
       #map_canvas {
         height: 75%;
       }
+      	.container {
+        width: 100%;
+        clear: both;
+	text-align:center;
+    }
+	.container input {
+        clear: both;
+    }
+    .form{
+    text-align:left; 
+    margin:0 auto;
+    display:inline-block
+	}
     </style> 
     <script type="text/javascript"
       src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script> 
@@ -204,6 +217,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Maldives")
 			MarkACountry(geocoder, "Japan")
 			MarkACountry(geocoder, "Taiwan")
+			MarkACountry(geocoder, "United Kingdom")
 		}
 		
 		else if (chosen == "Deforestation") {
@@ -213,6 +227,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Australia")
 		  	MarkACountry(geocoder, "Pakistan")
 			MarkACountry(geocoder, "Malaysia")
+			MarkACountry(geocoder, "Ecuador")
 			MarkACountry(geocoder, "Austria")
 		}
 		
@@ -284,6 +299,7 @@ else if(chosen == "WaterPollution")
 			MarkACountry(geocoder, "New Zealand")
 			MarkACountry(geocoder, "SaudiArabia")	
 			MarkACountry(geocoder, "Djibouti")
+			MarkACountry(geocoder, "South Africa")
 		
 		}
 		
@@ -307,6 +323,7 @@ else if(chosen == "WaterPollution")
 			MarkACountry(geocoder, "Maldives")
 			MarkACountry(geocoder, "Malaysia")
 			MarkACountry(geocoder, "Australia")
+			MarkACountry(geocoder, "Ecuador")
 			MarkACountry(geocoder, "Haiti")
 			MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Italy")
@@ -314,7 +331,6 @@ else if(chosen == "WaterPollution")
 			MarkACountry(geocoder, "Armenia")
 			MarkACountry(geocoder, "Myanmar")
 			MarkACountry(geocoder, "Israel")
-			MarkACountry(geocoder, "South Africa")
 			MarkACountry(geocoder, "Nigeria")
 			MarkACountry(geocoder, "Finland")
 			MarkACountry(geocoder, "Guadeloupe")
@@ -329,6 +345,7 @@ else if(chosen == "WaterPollution")
 			MarkACountry(geocoder, "Mongolia")
 			MarkACountry(geocoder, "Afghanistan")
 			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "United Kingdom")
 
 		}
 
@@ -339,6 +356,7 @@ else if(chosen == "WaterPollution")
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Ethiopia")
 			MarkACountry(geocoder, "Sri Lanka")
+			MarkACountry(geocoder, "Ecuador")
             		MarkACountry(geocoder, "Honduras")
 			MarkACountry(geocoder, "Italy")
 			MarkACountry(geocoder, "Guadeloupe")
@@ -348,7 +366,6 @@ else if(chosen == "WaterPollution")
 		  	MarkACountry(geocoder, "Pakistan")
 			MarkACountry(geocoder, "Israel")
 			MarkACountry(geocoder, "Macau")
-			MarkACountry(geocoder, "United Kingdom")
 			MarkACountry(geocoder, "Belgium")
 			MarkACountry(geocoder, "Fiji")
 			MarkACountry(geocoder, "Libya")
@@ -379,6 +396,7 @@ else if(chosen == "WaterPollution")
 			MarkACountry(geocoder, "Switzerland")
 			MarkACountry(geocoder, "Afghanistan")
 			MarkACountry(geocoder, "New Zealand")
+			MarkACountry(geocoder, "United Kingdom")
 				     
 			
 		}
@@ -461,7 +479,6 @@ else if(chosen == "WaterPollution")
 			var geocoder = new google.maps.Geocoder();
 		    	MarkACountry(geocoder, "Armenia")
 			MarkACountry(geocoder, "Israel")
-			MarkACountry(geocoded, "United Kingdom")
 			MarkACountry(geocoded, "India")
 			MarkACountry(geocoder, "Bulgaria")
 			MarkACountry(geocoder, "Belgium")
@@ -604,8 +621,9 @@ markersArray.push(marker);
 	Click on a country to see a description of the top issues in that country. <br>
 	You can also click on one of the environmental issues below to see the countries where that issue is in the top three.<BR>
 		This map is a class project by the "ICS 5: Environmental Issues in Information Technology" undergraduate course at <a href = "http://www.uci.edu">UCI</a>.  </p> 
+    <div class="container">
+      <div class="form">
 	 <FORM NAME = f1>
-		<center>
 	<Input type = radio Name = r1 Value = "Population" onClick =GetSelectedItem()>Population<BR>
 	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change<BR>
 	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise<BR>
@@ -632,8 +650,10 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "EnvironmentalInequality" onClick =GetSelectedItem()>Environmental Inequality<BR>
  	<Input type = radio Name = r1 Value = "EndangeredSpecies" onClick =GetSelectedItem()>Endangered Species<BR>
 	Other environmental issues will go here.
-	</center>
+	
 	</form>
+      </div>
+    </div>
     <div id="map_canvas"></div> 
   </body> 
 </html> 
@@ -642,6 +662,7 @@ markersArray.push(marker);
 
 essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
 essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
+essays['Ecuador'] = $.ajax({url: "Ecuador.html", async: false}).responseText;
 essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
 essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
 essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}).responseText;
@@ -694,5 +715,8 @@ ssays['France'] = $.ajax({url: "france.html", async: false}).responseText;
 essays['Germany'] = $.ajax({url: "Germany.html", async: false}).responseText;
 essays['Austria'] = $.ajax({url: "Austria.html", async: false}).responseText; 
 
+essays['Congo'] = $.ajax({url: "Congo.html",async: false}).responseText;
+essays['Libya'] = $.ajax({url: "Libya.html",async: false}).responseText;
+essays['United Kingdom'] = $.ajax({url: "UnitedKingdom.html",async: false}).responseText;
 
 </script> 
