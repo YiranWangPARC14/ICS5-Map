@@ -18,15 +18,14 @@
       	.container {
         width: 100%;
         clear: both;
-	text-align:center;
     }
 	.container input {
         clear: both;
     }
-    .form{
-    text-align:left; 
+  
+.form{
+	text-align:center;
     margin:0 auto;
-    display:inline-block
 	}
     </style> 
     <script type="text/javascript"
@@ -559,7 +558,18 @@ var countryEssay = "No essay yet";
             position: results[0].geometry.location
         });
 markersArray.push(marker);
-      } else {
+      }
+      
+      
+      else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {    
+            setTimeout(function() {
+                MarkACountry(geocoder, country);
+            }, 50);
+        } 
+      
+      
+      else
+      {
         alert("Geocode was not successful for the following reason: " + status);
       }
     });
@@ -584,33 +594,32 @@ markersArray.push(marker);
 		This map is a class project by the "ICS 5: Environmental Issues in Information Technology" undergraduate course at <a href = "http://www.uci.edu">UCI</a>.  </p> 
     <div class="container">
       <div class="form">
-	 <FORM NAME = f1>
-	<Input type = radio Name = r1 Value = "Population" onClick =GetSelectedItem()>Population<BR>
-	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change<BR>
-	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise<BR>
-	<Input type = radio Name = r1 Value = "Deforestation" onClick =GetSelectedItem()>Deforestation<BR>
+ 	 <FORM NAME = f1>
+	<Input type = radio Name = r1 Value = "Population" onClick =GetSelectedItem()>Population
+	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change
+	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise
+	<Input type = radio Name = r1 Value = "Deforestation" onClick =GetSelectedItem()>Deforestation
 	<Input type = radio Name = r1 Value = "Pollution" onClick =GetSelectedItem()>Pollution<BR>
-	<Input type = radio Name = r1 Value = "LackofEnergy" onClick =GetSelectedItem()>Lack of Energy<BR>
-	<Input type = radio Name = r1 Value = "WaterPollution" onClick = GetSelectedItem()>Water Pollution<BR>
-	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification<BR>
-	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
+	<Input type = radio Name = r1 Value = "LackofEnergy" onClick =GetSelectedItem()>Lack of Energy
+	<Input type = radio Name = r1 Value = "WaterPollution" onClick = GetSelectedItem()>Water Pollution
+	<Input type = radio Name = r1 Value = "Desertification" onClick =GetSelectedItem()>Desertification
+	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation
 	<Input type = radio Name = r1 Value = "AirPollution" onClick =GetSelectedItem()>Air Pollution<BR>
-	<Input type = radio Name = r1 Value = "FoodSafety" onClick =GetSelectedItem()>Food Safety<BR>
-	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
-	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management<BR>
-	<Input type = radio Name = r1 Value = "GreenhouseGasEmissions" onClick =GetSelectedItem()>Green House Gas Emissions<BR>
+	<Input type = radio Name = r1 Value = "FoodSafety" onClick =GetSelectedItem()>Food Safety
+	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education
+	<Input type = radio Name = r1 Value = "WasteManagement" onClick =GetSelectedItem()>Waste Management
+	<Input type = radio Name = r1 Value = "GreenhouseGasEmissions" onClick =GetSelectedItem()>Green House Gas Emissions
 	<Input type = radio Name = r1 Value = "Radiation" onClick =GetSelectedItem()>Radiation<BR>
-	<Input type = radio Name = r1 Value = "Traffic" onClick =GetSelectedItem()>Traffic<BR>
-	<Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>War<BR>
-	<Input type = radio Name = r1 Value = "ResourceExploitation" onClick =GetSelectedItem()>Waste Management<BR>
-	<Input type = radio Name = r1 Value = "BiologicalDiversity" onClick =GetSelectedItem()>Biological Diversity<BR>
+	<Input type = radio Name = r1 Value = "Traffic" onClick =GetSelectedItem()>Traffic
+	<Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>War
+	<Input type = radio Name = r1 Value = "ResourceExploitation" onClick =GetSelectedItem()>Waste Management
+	<Input type = radio Name = r1 Value = "BiologicalDiversity" onClick =GetSelectedItem()>Biological Diversity
 	<Input type = radio Name = r1 Value = "Transportation" onClick =GetSelectedItem()>Transportation<BR>
-	<Input type = radio Name = r1 Value = "EnergyProduction" onClick =GetSelectedItem()>Energy Production<BR>
-	<Input type = radio Name = r1 Value = "AcidRain" onClick =GetSelectedItem()>Acid Rain<BR>
-	<Input type = radio Name = r1 Value = "VehicleCongestion" onClick =GetSelectedItem()>Vehicle Congestion<BR>
-	<Input type = radio Name = r1 Value = "EnvironmentalInequality" onClick =GetSelectedItem()>Environmental Inequality<BR>
- 	<Input type = radio Name = r1 Value = "EndangeredSpecies" onClick =GetSelectedItem()>Endangered Species<BR>
-	Other environmental issues will go here.
+	<Input type = radio Name = r1 Value = "EnergyProduction" onClick =GetSelectedItem()>Energy Production
+	<Input type = radio Name = r1 Value = "AcidRain" onClick =GetSelectedItem()>Acid Rain
+	<Input type = radio Name = r1 Value = "VehicleCongestion" onClick =GetSelectedItem()>Vehicle Congestion
+	<Input type = radio Name = r1 Value = "EnvironmentalInequality" onClick =GetSelectedItem()>Environmental Inequality
+ 	<Input type = radio Name = r1 Value = "EndangeredSpecies" onClick =GetSelectedItem()>Endangered Species
 	
 	</form>
       </div>
@@ -621,8 +630,8 @@ markersArray.push(marker);
 
 <script>
 
-essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
-essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
+essays['Norway'] = $.ajax({url: "Norway.html", async: false}).responseText;
+essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;//doesn't exist
 essays['Ecuador'] = $.ajax({url: "Ecuador.html", async: false}).responseText;
 essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
 essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
@@ -653,14 +662,14 @@ essays['Ghana'] = $.ajax({url: "ghana2.html", async: false}).responseText;
 essays['Armenia'] = $.ajax({url: "Armenia.html", async: false}).responseText;
 essays['Guadeloupe'] = $.ajax({url: "Guadeloupe.html", async: false}).responseText;
 essays['India'] = $.ajax({url: "India.html", async: false}).responseText;
-ssays['France'] = $.ajax({url: "france.html", async: false}).responseText;
+essays['France'] = $.ajax({url: "france.html", async: false}).responseText;
 essays['Germany'] = $.ajax({url: "Germany.html", async: false}).responseText;
 essays['Austria'] = $.ajax({url: "Austria.html", async: false}).responseText; 
 essays['Congo'] = $.ajax({url: "Congo.html",async: false}).responseText;
 essays['Libya'] = $.ajax({url: "Libya.html",async: false}).responseText;
 essays['United Kingdom'] = $.ajax({url: "UnitedKingdom.html",async: false}).responseText;
 essays['UAE'] = $.ajax({url: "UAE.html",async: false}).responseText;
-essays['Myanmar'] = $.ajax({url: "Myanmar.html",async: false}).responseText
+essays['Myanmar'] = $.ajax({url: "Myanmar.html",async: false}).responseText;
 essays['Bermuda'] = $.ajax({url: "Bermuda.html",async: false}).responseText;
 
 
