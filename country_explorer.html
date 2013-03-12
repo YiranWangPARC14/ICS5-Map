@@ -182,8 +182,10 @@ var countryEssay = "No essay yet";
 
 		
 		else if (chosen == "ClimateChange") {
+		  
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "United States")
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
@@ -202,8 +204,10 @@ var countryEssay = "No essay yet";
 
 	       
 		else if (chosen == "SeaLevelRise") {
+		  
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "United States")
 			MarkACountry(geocoder, "Canada")
 			MarkACountry(geocoder, "Spain")
@@ -216,8 +220,10 @@ var countryEssay = "No essay yet";
 		}
 		
 		else if (chosen == "Deforestation") {
+		  
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "Mexico")
 			MarkACountry(geocoder, "Australia")
 		  	MarkACountry(geocoder, "Pakistan")
@@ -245,7 +251,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Mongolia")
 			MarkACountry(geocoder, "Finland")
 			MarkACountry(geocoder, "Nigeria")
-			}
+		}
 			
 			
 		
@@ -265,8 +271,10 @@ var countryEssay = "No essay yet";
 		
 		
 		else if (chosen == "LackofEnegy") {
+		  
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "South Africa")
 			MarkACountry(geocoder, "Ethiopia")
 			
@@ -306,14 +314,17 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Afghanistan")
 			MarkACountry(geocoder, "New Zealand")
 			MarkACountry(geocoder, "United Kingdom")
+			MarkACountry(geocoder, "Ukraine")
 
 		}
 
 
 
 		else if (chosen == "SoilDegradation") {
+		  
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "Ethiopia")
 			MarkACountry(geocoder, "Sri Lanka")
 			MarkACountry(geocoder, "Ecuador")
@@ -335,11 +346,11 @@ var countryEssay = "No essay yet";
 			
 		}
 
-		else if (chosen == "AirPollution")
- 		{
+		else if (chosen == "AirPollution"){
 			
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "Macau")
 			MarkACountry(geocoder, "Malaysia")
 			MarkACountry(geocoder, "Pakistan")
@@ -357,6 +368,7 @@ var countryEssay = "No essay yet";
 			MarkACountry(geocoder, "Afghanistan")
 			MarkACountry(geocoder, "New Zealand")
 			MarkACountry(geocoder, "United Kingdom")
+			MarkACountry(geocoder, "Ukraine")
 				     
 			
 		}
@@ -364,7 +376,6 @@ var countryEssay = "No essay yet";
 	      else if (chosen == "FoodSafety") {
 		  	
 			clearOverlays();
-		  	
 			var geocoder = new google.maps.Geocoder();
 		  	
 			MarkACountry(geocoder, "Germany")
@@ -422,21 +433,26 @@ var countryEssay = "No essay yet";
 		}
 		
 		else if (chosen == "Radiation") {
+		  
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			
 			MarkACountry(geocoder, "Germany")
 			MarkACountry(geocoder, "Armenia")
 			MarkACountry(geocoder, "France")
 			MarkACountry(geocoder, "Norway")
 			MarkACountry(geocoder, "Russia")
 			MarkACountry (geocoder, "Guatemala")
+			MarkACountry(geocoder, "Ukraine")
 		  
 		}
 
 
 		else if (chosen == "Traffic") {
+		  
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
+			
 		    	MarkACountry(geocoder, "Armenia")
 			MarkACountry(geocoder, "Israel")
 			MarkACountry(geocoded, "India")
@@ -459,7 +475,6 @@ var countryEssay = "No essay yet";
 		else if (chosen == "War") {
                 	
 			clearOverlays();
-                	
 			var geocoder = new google.maps.Geocoder();
                 	
 			MarkACountry(geocoder, "Congo")
@@ -471,7 +486,6 @@ var countryEssay = "No essay yet";
 		else if (chosen == "ResourceExploitation") {
                 	
 			clearOverlays();
-                 	
 			var geocoder = new google.maps.Geocoder();
                 	
 			MarkACountry(geocoder, "Congo")
@@ -481,6 +495,7 @@ var countryEssay = "No essay yet";
 		else if (chosen == "BiologicalDiversity") {
                 	clearOverlays();
                 	var geocoder = new google.maps.Geocoder();
+			
                 	MarkACountry(geocoder, "Norway")
 			MarkACountry(geocoder, "Myanmar")
 			MarkACountry(geocoder, "Congo")
@@ -492,7 +507,6 @@ var countryEssay = "No essay yet";
 		else if (chosen == "EnergyProduction"){
 		  	
 			clearOverlays();
-		  	
 			var geocoder = new google.maps.Geocoder();
 		  
 			MarkACountry(geocoder, "Denmark")
@@ -502,7 +516,6 @@ var countryEssay = "No essay yet";
 		else if (chosen == "AcidRain"){
 			
 			clearOverlays();
-			
 			var geocoder = new google.maps.Geocoder();
 			
 			MarkACountry(geocoder, "Sweden")
@@ -528,6 +541,7 @@ var countryEssay = "No essay yet";
 			
 			MarkACountry(geocoder, "Hong Kong")
 			}
+			
 		else if (chosen == "EndangeredSpecies"){
 			
 			clearOverlays();
@@ -629,6 +643,63 @@ markersArray.push(marker);
 </html> 
 
 <script>
+essays['Argentina'] = $.ajax({url: "Argentina2.html", async: false}).responseText;
+essays['Sweden'] = $.ajax({url: "Sweden.html", async: false}).responseText;
+essays['Australia'] = $.ajax({url: "Australia.html", async: false}).responseText;
+essays['The Bahamas'] = $.ajax({url: "Bahamas.html", async: false}).responseText;
+essays['Barbados'] = $.ajax({url: "Barbados.html", async: false}).responseText;
+essays['Bhutan'] = $.ajax({url: "Bhutan.html", async: false}).responseText;
+essays['Botswana'] = $.ajax({url: "Botswana.html", async: false}).responseText;
+essays['Bulgaria'] = $.ajax({url: "Bulgaria.html", async: false}).responseText;
+essays['Cambodia'] = $.ajax({url: "Cambodia.html", async: false}).responseText;
+essays['Cameroon'] = $.ajax({url: "Cameroon.html", async: false}).responseText;
+essays['Canada'] = $.ajax({url: "Canada.html", async: false}).responseText;
+essays['Chad'] = $.ajax({url: "Chad.html", async: false}).responseText;
+essays['Chile'] = $.ajax({url: "Chile.html", async: false}).responseText;
+essays['Colombia'] = $.ajax({url: "Colombia.html", async: false}).responseText;
+essays['Dominican Republic'] = $.ajax({url: "DominicanRepublic.html", async: false}).responseText;
+essays['Egypt'] = $.ajax({url: "Egypt.html", async: false}).responseText;
+essays['El Salvador'] = $.ajax({url: "ElSalvador.html", async: false}).responseText;
+essays['Ethiopia'] = $.ajax({url: "Ethiopia.html", async: false}).responseText;
+essays['Fiji'] = $.ajax({url: "Fiji.html", async: false}).responseText;
+essays['Greece'] = $.ajax({url: "Greece.html", async: false}).responseText;
+essays['Hungary'] = $.ajax({url: "Hungary.html", async: false}).responseText;
+essays['Iceland'] = $.ajax({url: "Iceland.html", async: false}).responseText;
+essays['Indonesia'] = $.ajax({url: "Indonesia.html", async: false}).responseText;
+essays['Iran'] = $.ajax({url: "Iran.html", async: false}).responseText;
+essays['Italy'] = $.ajax({url: "Italy.html", async: false}).responseText;
+essays['Jamaica'] = $.ajax({url: "Jamaica.html", async: false}).responseText;
+essays['Japan'] = $.ajax({url: "Japan.html", async: false}).responseText;
+essays['Jordan'] = $.ajax({url: "Jordan.html", async: false}).responseText;
+essays['Kenya'] = $.ajax({url: "Kenya.html", async: false}).responseText;
+essays['Madagascar'] = $.ajax({url: "Madagascar.html", async: false}).responseText;
+essays['Maldives'] = $.ajax({url: "Maldives.html", async: false}).responseText;
+essays['Mexico'] = $.ajax({url: "Mexico.html", async: false}).responseText;
+essays['Mongolia'] = $.ajax({url: "Mongolia.html", async: false}).responseText;
+essays['Morocco'] = $.ajax({url: "Morocco.html", async: false}).responseText;
+essays['North Korea'] = $.ajax({url: "NorthKorea.html", async: false}).responseText;
+essays['Paraguay'] = $.ajax({url: "Paraguay.html", async: false}).responseText;
+essays['Philippines'] = $.ajax({url: "Philippines.html", async: false}).responseText;
+essays['Poland'] = $.ajax({url: "Poland.html", async: false}).responseText;
+essays['Portugal'] = $.ajax({url: "Portugal.html", async: false}).responseText;
+essays['Samoa'] = $.ajax({url: "Samoa.html", async: false}).responseText;
+essays['Sierra Leone'] = $.ajax({url: "Sierra_Leone.html", async: false}).responseText;
+essays['Slovenia'] = $.ajax({url: "Slovenia.html", async: false}).responseText;
+essays['Spain'] = $.ajax({url: "Spain.html", async: false}).responseText;
+essays['Sri Lanka'] = $.ajax({url: "Sri_Lanka.html", async: false}).responseText;
+essays['Sudan'] = $.ajax({url: "Sudan.html", async: false}).responseText;
+essays['Syria'] = $.ajax({url: "Syria2.html", async: false}).responseText;
+essays['Thailand'] = $.ajax({url: "Thailand.html", async: false}).responseText;
+essays['Tunisia'] = $.ajax({url: "Tunisia.html", async: false}).responseText;
+essays['Turkey'] = $.ajax({url: "Turkey.html", async: false}).responseText;
+essays['Uganda'] = $.ajax({url: "Uganda.html", async: false}).responseText;
+essays['Uruguay'] = $.ajax({url: "Uruguay.html", async: false}).responseText;
+essays['Vietnam'] = $.ajax({url: "Vietnam.html", async: false}).responseText;
+essays['Yemen'] = $.ajax({url: "Yemen.html", async: false}).responseText;
+essays['Laos'] = $.ajax({url: "laos2.html", async: false}).responseText;
+essays['Lebanon'] = $.ajax({url: "lebanon.html", async: false}).responseText;
+essays['Rwanda'] = $.ajax({url: "rwanda.html", async: false}).responseText;
+
 
 essays['Afghanistan'] = $.ajax({url: "Afghanistan.html", async: false}).responseText;
 essays['Argentina'] = $.ajax({url: "Argentina2.html", async: false}).responseText;
@@ -691,6 +762,9 @@ essays['Switzerland'] = $.ajax({url: "Switzerland.html", async: false}).response
 essays['Taiwan'] = $.ajax({url: "Taiwan.html",async: false}).responseText;
 essays['United Kingdom'] = $.ajax({url: "UnitedKingdom.html",async: false}).responseText;
 essays['UAE'] = $.ajax({url: "UAE.html",async: false}).responseText;
+essays['Myanmar'] = $.ajax({url: "Myanmar.html",async: false}).responseText;
+essays['Bermuda'] = $.ajax({url: "Bermuda.html",async: false}).responseText;
+essays['Ukraine'] = $.ajax({url: "Ukraine.html",async: false}).responseText;
 
 
 </script> 
